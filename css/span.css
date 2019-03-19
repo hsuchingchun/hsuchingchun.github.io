@@ -1,0 +1,10 @@
+#html-element {
+    font-size: 24pt;
+    color: mediumspringgreen;
+    font-weight: 800;
+    border-bottom: 1px solid mediumaquamarine;
+}
+
+.red {
+    color: red;
+}
