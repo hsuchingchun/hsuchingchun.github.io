@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-image: url("./img/August12_Blank.jpg");
+    background-image: url("./img2/August12_Blank.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -32,7 +32,7 @@ a {
     width: 200px;
     border-radius: 50%;
     border: 2px solid #f8f9f3;
-    background-image: url("./img/IMG_20190312_124407.jpg");
+    background-image: url("./img2/IMG_20190312_124407.jpg");
     background-size: cover;
     transition: all .5s ease;
 }
