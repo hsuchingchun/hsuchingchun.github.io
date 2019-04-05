@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Dancing+Script|Lobster');
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+#cc {
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+}
+
+#choice {
+    font-family: 'Dancing Script', cursive;
+    font-size: 15pt;
+}
+
+#cch1 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+}
+
+#ocean {
+    position: relative;
+    background-image: url("./img3/ocean1.jpg");
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+}
+
+#mountain {
+    position: relative;
+    background-image: url("./img3/mountain1.jpg");
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+}
+
+#field {
+    position: relative;
+    background-image: url("./img3/field3.jpg");
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+}
+
+.money {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: white;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+
+.price {
+    position: absolute;
+    top: 35px;
+    right: 27px;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 16pt;
+}
+
+.card-text {
+    font-family: 'Cinzel', serif;
+}
+
+.card-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 20pt;
+}
+
+.buy {
+    width: 200px;
+}
