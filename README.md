@@ -1,13 +1,13 @@
 # hsuchingchun.github.io
 ## 套用版型
-* [Link]http://www.templatemo.com/tm-498-stimulus
+* http://www.templatemo.com/tm-498-stimulus
 ## copy別人的code
-* [Link]https://www.w3cplus.com/css3/css-secrets/cutout-corners.html #home黃色區域 將版面直切色塊
-* [Link]https://kknews.cc/news/lp92vkz.html #home HSU,CHING-CHUN標題CSS打字動畫
-* [Link]https://www.webdesigns.com.tw/youtube-rwd.asp #works 將youtube影片嵌入RWD(自適應網頁)
+* https://www.w3cplus.com/css3/css-secrets/cutout-corners.html #home黃色區域 將版面直切色塊
+* https://kknews.cc/news/lp92vkz.html #home HSU,CHING-CHUN標題CSS打字動畫
+* https://www.webdesigns.com.tw/youtube-rwd.asp #works 將youtube影片嵌入RWD(自適應網頁)
 ## 參考別人的code
-* [Link]https://www.oxxostudio.tw/articles/201803/css-animation.html HSU,CHING-CHUN標題css打字動畫回放
-* [Link]https://maciliou.wordpress.com/2016/07/28/%E6%BB%91%E9%BC%A0%E7%A7%BB%E5%85%A5%E5%9C%96%E7%89%87%E6%94%BE%E5%A4%A7%E7%89%B9%E6%95%88-css3/ #works 四格圖片點擊放大
+* https://www.oxxostudio.tw/articles/201803/css-animation.html HSU,CHING-CHUN標題css打字動畫回放
+* https://maciliou.wordpress.com/2016/07/28/%E6%BB%91%E9%BC%A0%E7%A7%BB%E5%85%A5%E5%9C%96%E7%89%87%E6%94%BE%E5%A4%A7%E7%89%B9%E6%95%88-css3/ #works 四格圖片點擊放大
 ## 改寫、特色
 * templatemo-style.css為原本版型css，因內容複雜，增加index.css為改寫覆蓋輔助，顏色、padding等則至原本css內修改
 * 增加手機板響應式網頁
