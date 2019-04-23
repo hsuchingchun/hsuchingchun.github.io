@@ -14,6 +14,7 @@
 * import google font
 * 新增wow.js動畫(原本的版型已有改寫)
 * 新增fontawesome icon
+* #home 灰色字點選出現黃框
 * #home 將版面6/12直切180度成兩色塊(黃白)
 * #home HSU,CHING-CHUN標題新增css打字動畫
 * #works 四格圖片點擊放大
