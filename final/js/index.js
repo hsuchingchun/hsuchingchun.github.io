@@ -9,7 +9,7 @@ $(() => {
             $('.speed').show()
             time()
             scoring()
-            $BGM = "<audio src='./mix_32s (audio-joiner.com) (mp3cut.net) (3).mp3' autoplay='autoplay'></audio>"
+            $BGM = "<audio src='../mix_32s (audio-joiner.com) (mp3cut.net) (3).mp3' autoplay='autoplay'></audio>"
             $('body').append($BGM)
         })
         // $('.again').click(function() {
@@ -27,7 +27,7 @@ $(() => {
 
     function time() {
         var randomPic = Math.ceil(Math.random() * 5)
-        var hole = "<div class='hole'><img src='./image" + randomPic + ".png' alt=''width='130px' / ></div>"
+        var hole = "<div class='hole'><img src='../image" + randomPic + ".png' alt=''width='130px' / ></div>"
         var holeNum = 18
         for (var i = 0; i < holeNum; i++) {
             $('.holeArea').append(hole)
@@ -60,7 +60,7 @@ $(() => {
             var holeArr = numbering(0, 18)
             for (var i = 0; i < alienNum; i++) {
                 var randNum = Math.floor(Math.random() * holeArr.length)
-                var alien = $('img').eq(holeArr.splice(randNum, 1)).attr('src', './image' + randomPic + '.png')
+                var alien = $('img').eq(holeArr.splice(randNum, 1)).attr('src', '../image' + randomPic + '.png')
                     // splice()函数用於將randNum數組中的一個數字進行剔除並返回該值
                 if (alien.is(':hidden')) {
                     alien.fadeIn(100, function() {
@@ -76,7 +76,7 @@ $(() => {
 
 
         $(".hole img").click(function() {
-            $('.holeArea').append("<audio src='./laser1.mp3' autoplay='autoplay'></audio>")
+            $('.holeArea').append("<audio src='../laser1.mp3' autoplay='autoplay'></audio>")
             var point0 = 'point'
             var points = 'points'
 
@@ -114,7 +114,7 @@ $(() => {
         }, 1000)
 
 
-        $(".holeArea").css('cursor', 'url("./superRocket_resized (3).png"),move')
+        $(".holeArea").css('cursor', 'url("../superRocket_resized (3).png"),move')
     }
 
 
