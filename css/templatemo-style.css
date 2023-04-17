@@ -88,6 +88,9 @@ p {
     letter-spacing: 1.5px;
 }
 
+span{
+    font-weight: 700;
+}
 .second-heading{
     font-size: 20px;
     color:#F26322;
@@ -194,26 +197,26 @@ footer {
 }
 
 .bg-yellow {
-    background: #E3AE57;
+    background-color: #E3AE57;
 }
 
 .bg-yellow1 {
-    background: #FEC804;
+    background-color: #FEC804;
 }
 
 .bg-orange {
-    background: #F26322;
+    background-color: #F26322;
 }
 
 .bg-white {
-    background: #ffffff;
+    background-color: #ffffff;
 }
 
 .bg-dark {
-    background: #161616;
+    background-color: #161616;
 }
 .bg-trasparent {
-    background:transparent;
+    background-color:transparent;
 }
 
 
@@ -254,6 +257,17 @@ a:focus {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* table */
+
+.table,.table-bordered{
+    border: #cccccc 1px solid;
+}
+
+th{
+    font-weight: 500;
+}
+
 
 
 /*---------------------------------------
@@ -651,6 +665,9 @@ footer {
     p {
         font-size: 14px;
         line-height: inherit;
+    }
+    strong {
+        line-height: 2rem;
     }
     .second-heading{
         font-size: 16px;

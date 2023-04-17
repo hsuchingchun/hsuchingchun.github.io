@@ -13,7 +13,7 @@
 
 
 .title-cover{
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     padding: 20px 30px;
     /* box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1); */
     /* display: flex; */
@@ -27,6 +27,13 @@
     /* margin-left: 20px; */
     /* margin-right: 20px; */
     /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.project-heading{
+    display: flex;
+}
+.page-heading{
+    letter-spacing: 2px;
 }
 #overview .heading{
     margin-top: 20px;
@@ -54,6 +61,23 @@
 .page{
     display: flex;
     justify-content: center;
+}
+
+.page-tag{
+    /* border: #000 1px solid; */
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: rgba(254, 200, 4, 0.3);
+    padding: 25px 5px;
+    max-width: 110px;
+    height: 110px;
+    text-align: center;
+    line-height: 25px;
+    margin: 5px 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
 }
 
 .list-padding{
@@ -87,6 +111,7 @@
 }
 
 
+
 @media only screen and (max-width: 580px) {
     #pocketWorld{
         background: url(../img/XR競賽.png) no-repeat center fixed;
@@ -114,12 +139,15 @@
         border-bottom: 1px solid #dddddd;
         line-height: 22px;
     }
+    .project-heading{
+        justify-content: center;
+    }
     .content-black{
         margin: auto 20px;
         line-height: 28px;
     }
     .page-heading{
-        margin: 10px 20px;
+        margin: 0px 20px;
     }
     .list-group{
         display: none;
@@ -129,6 +157,10 @@
     }
     .list-padding{
         margin-right: 30px;
+    }
+    .page-tag {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
