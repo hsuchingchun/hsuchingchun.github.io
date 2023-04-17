@@ -1,0 +1,182 @@
+#pocketWorld{
+    background: url(../img/XR競賽.png) no-repeat center fixed;
+    background-size: cover;
+    background-position-x: 20vw;
+}
+
+.project-page,.list-item {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+
+.title-cover{
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 30px;
+    /* box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1); */
+    /* display: flex; */
+}
+
+.project-card{
+    border: 1px solid #dddddd;
+    padding: 20px 10px;
+    margin-top: 80px;
+    width: 80vw;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+}
+#overview .heading{
+    margin-top: 20px;
+}
+#role-card{
+    margin: 40px 20px;
+}
+.project-title{
+    color: black;
+}
+
+.content-black{
+    border-left: 1px solid #000;
+    color: #000;
+    line-height: 30px;
+    margin-left:5px;
+    padding-left: 20px;
+}
+
+.content-black>p{
+    color: #000;
+    line-height: 30px;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+.list-padding{
+    padding-left: 12px;
+}
+
+/* 內頁 nav */
+.list-group{
+    position: fixed;
+    bottom: 10vh;
+    left: 30px;
+    --bs-list-group-border-color:transparent;
+    border-radius: 0%;
+    width: fit-content;
+}
+.list-group-item{
+    padding: 5px;
+    color: #bbbbbb;
+    background-color: transparent;
+    font-size: 12px;
+}
+.list-group-item.active{
+    background-color: transparent;
+    border-color:transparent;
+    color: #FEC804;
+}
+.list-group-item:hover{
+    background-color: transparent;
+    border-color:transparent;
+    color:  #FEC804;
+}
+
+
+@media only screen and (max-width: 580px) {
+    #pocketWorld{
+        background: url(../img/XR競賽.png) no-repeat center fixed;
+        background-size: auto;
+        background-position-x: -115vw;
+    }
+    .project-page {
+        display: flex;
+        align-items: end;
+        min-height: 100vh;
+        max-width: 100vw;
+        background-color: rgba(255,255,255,0.8);
+    }
+    .title-cover{
+        border-radius: 20px 20px 0 0 ;
+        box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    #role-card{
+        text-align: center;
+        margin: 20px 40px;
+    }
+    .project-title{
+        color: black;
+        border-bottom: 1px solid #dddddd;
+        line-height: 22px;
+    }
+    .content-black{
+        margin: auto 20px;
+        line-height: 28px;
+    }
+    .page-heading{
+        margin: 10px 20px;
+    }
+    .list-group{
+        display: none;
+    }
+    .video{
+        margin: auto 20px;
+    }
+    .list-padding{
+        margin-right: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #role-card{
+        text-align: center;
+        margin: 20px 40px;
+    }
+    .project-title{
+        color: black;
+        border-bottom: 1px solid #dddddd;
+        line-height: 22px;
+    }
+    .project-page,.list-item {
+        display: flex;
+        align-items: center;
+        min-height: 80vh;
+        max-width: 100vw;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    #pocketWorld{
+        background: url(../img/XR競賽.png) no-repeat center fixed;
+        background-size: auto;
+        /* background-position-x: -115vw; */
+    }
+    .project-page {
+        display: flex;
+        align-items: end;
+        min-height: 100vh;
+        max-width: 100vw;
+        background-color: rgba(255,255,255,0.8);
+    }
+    .title-cover{
+        border-radius: 20px 20px 0 0 ;
+        box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    #role-card{
+        text-align: center;
+        margin: 20px 40px;
+    }
+    .project-title{
+        color: black;
+        border-bottom: 1px solid #dddddd;
+        line-height: 22px;
+    }
+}

@@ -2,53 +2,90 @@
   PRE LOADER
 -------------------------------------------------------------------------------*/
 
-$(window).load(function() {
-    $('.preloader').fadeOut(1000); // set duration in brackets    
-});
+// $(window).load(function() {
+//     $('.preloader').fadeOut(1000); // set duration in brackets    
+// });
 
 
 
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
 
     /*-------------------------------------------------------------------------------
       Navigation - Hide mobile menu after clicking on a link
     -------------------------------------------------------------------------------*/
 
-    $('.navbar-collapse a').click(function() {
-        $(".navbar-collapse").collapse('hide');
-    });
+    // $('.navbar-collapse a').click(function() {
+    //     $(".navbar-collapse").collapse('hide');
+    // });
 
 
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar-fixed-top").addClass("top-nav-collapse");
-        } else {
-            $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($(".navbar").offset().top > 50) {
+    //         $(".navbar-fixed-top").addClass("top-nav-collapse");
+    //     } else {
+    //         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    //     }
+    // });
 
+
+//navbar向下滾動的時候會出現陰影，向上時則消失
+let lastPos = 0
+const nav = document.querySelector('.navbar');
+
+// 1. 消失
+document.addEventListener('scroll',function(){
+  let currentPos =  window.scrollY;
+  //   往下滑
+  if(currentPos > lastPos){
+    nav.classList.add('navbar-shadow');
+  }else{
+    nav.classList.remove('navbar-shadow');
+  }
+  lastPos = currentPos;
+});
+
+// 2. 換顏色
+
+//在navbar封面時，navbar為透明，其餘為白色
+const sectionTrans = document.querySelector('.navbar-trans');
+
+const changeColor = (entries, observer) =>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      nav.classList.add('bg-transparent');
+      nav.classList.remove('navbar-shadow');
+    }else{
+       nav.classList.remove('bg-transparent');
+    //    nav.classList.add('navbar-shadow');
+    }
+  })
+  
+}
+
+let observer = new IntersectionObserver(changeColor);
+observer.observe(sectionTrans);
 
 
     /*-------------------------------------------------------------------------------
       jQuery Parallax
     -------------------------------------------------------------------------------*/
 
-    function initParallax() {
-        $('#home').parallax("100%", 0.1);
-        $('#about').parallax("100%", 0.3);
-        $('#service').parallax("100%", 0.2);
-        $('#experience').parallax("100%", 0.3);
-        $('#education').parallax("100%", 0.1);
-        $('#quotes').parallax("100%", 0.3);
-        $('#contact').parallax("100%", 0.1);
-        $('footer').parallax("100%", 0.2);
+    // function initParallax() {
+    //     $('#home').parallax("100%", 0.1);
+    //     $('#project1').parallax("100%", 0.3);
+    //     $('#service').parallax("100%", 0.2);
+    //     $('#experience').parallax("100%", 0.3);
+    //     $('#education').parallax("100%", 0.1);
+    //     $('#quotes').parallax("100%", 0.3);
+    //     $('#contact').parallax("100%", 0.1);
+    //     $('footer').parallax("100%", 0.2);
 
-    }
-    initParallax();
+    // }
+    // initParallax();
 
 
 
@@ -56,15 +93,15 @@ $(document).ready(function() {
       smoothScroll js
     -------------------------------------------------------------------------------*/
 
-    $(function() {
-        $('.custom-navbar a, #home a').bind('click', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 49
-            }, 1000);
-            event.preventDefault();
-        });
-    });
+    // $(function() {
+    //     $('.custom-navbar a, #home a').bind('click', function(event) {
+    //         var $anchor = $(this);
+    //         $('html, body').stop().animate({
+    //             scrollTop: $($anchor.attr('href')).offset().top - 49
+    //         }, 1000);
+    //         event.preventDefault();
+    //     });
+    // });
 
 
 
@@ -72,9 +109,9 @@ $(document).ready(function() {
       wow js - Animation js
     -------------------------------------------------------------------------------*/
 
-    new WOW({
-        mobile: false
-    }).init();
+    // new WOW({
+    //     mobile: false
+    // }).init();
 
 
-});
+// });

@@ -7,19 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="templatemo">
+    <meta name="author" content="chingchun">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>CHING-CHUN</title>
-    <!--
-Stimulus Template
-http://www.templatemo.com/tm-498-stimulus
--->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/templatemo-style.css">
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
@@ -30,421 +24,221 @@ http://www.templatemo.com/tm-498-stimulus
 
     <!-- PRE LOADER -->
 
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="spinner">
             <span class="spinner-rotate"></span>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Navigation Section -->
 
-    <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-        <div class="container">
-
-            <!-- navbar header -->
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand">CHING-CHUN</a>
-            </div>
-
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" class="smoothScroll">Home</a></li>
-                    <li><a href="#about" class="smoothScroll">About Me</a></li>
-                    <li><a href="#experience" class="smoothScroll">Experiences</a></li>
-                    <li><a href="#quotes" class="smoothScroll">Works</a></li>
-                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+    <div class=" custom-navbar navbar navbar-expand-lg navbar-light fixed-top py-2" id="mainNav">
+        <div class="container px-lg-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="" class="nav-logo ">CC</a>
+            <button class="navbar-toggler navbar-toggler-right navbar-style" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="./about.html">About</a></li>
                 </ul>
             </div>
-
         </div>
     </div>
 
 
     <!-- Home Section start-->
 
-    <section id="home" class="parallax-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 ">
-                    <!-- <div class="home-img"> -->
-
-                    <div class="home-thumb righthome">
-                        <div class="home-photo "></div>
-                        <div class="section-title">
-                            <h4 class="text-center wow bounceInUp " data-wow-delay="0.3s">welcome to my website</h4>
-                            <h1 class="resume  wow bounceInUp" data-wow-delay="0.6s ">個人<strong>履歷</strong></h1>
-                            <p class="resume1 text-center wow fadeInUp " data-wow-delay="0.9s ">Resume</p>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="home-thumb ">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp  chinesefont " data-wow-delay="0.6s">哈囉,&nbsp&nbsp我是
-                                <strong>許青純</strong> </h3>
-                            <h2 class=" chinesefont typing"><strong> HSU,
-                                    CHING-CHUN</strong></h2>
-                            <p class="wow fadeInUp chinesefont1" data-wow-delay="0.8s">目前就讀於臺灣大學圖資系二年級</p>
-                            <h4 class="wow fadeInUp keyword"><span class="big">C</span> apble 能幹</h4>
-                            <h4 class="wow fadeInUp keyword"><span class="big">H</span> onest 誠實</h4>
-                            <h4 class="wow fadeInUp keyword"><span class="big">U</span> derstanding 領悟性高</h4>
-                            <h4 class="wow fadeInUp  keyword"><span class="big">N</span> imble 機智</h4>
-                            <h4 class="wow fadeInUp keyword">是我的代表詞。</h4>
-
-                            <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">KNOW MORE</a>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
+    <section id="home" class="navbar-trans">
+        <div class="container-fluid home">
+            <h3 class="typing" data-wow-delay="0.6s">哈囉,&nbsp&nbsp我是 許青純</h3>
+            <h3 class="">Hi, I'm HSU,CHING-CHUN.
+            </h3>
+            <!-- <a href="#about" class="btn" data-wow-delay="1.4s">KNOW MORE</a> -->
+            <h4>夢想是成為數位設計師<br><br> HCI．UIUX．WEB Design
+            </h4>
         </div>
+
     </section>
     <!-- Home Section end-->
 
-    <!-- About Section start-->
-
-    <section id="about" class="parallax-section">
+    <section id="portfolio">
+        <!--Featured Project Section start-->
         <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-sm-6">
-                    <div class="about-thumb " id="about-margin">
-                        <span class=" wow fadeInUp vertical-mode " id="about-me">ABOUT ME</span>
-                        <div class="wow bounceInDown section-title" data-wow-delay="0.4s">
-                            <h2 class="chinesefont c" id="aboutborder ">關於我</h2>
-                        </div>
-
-                        <div class="wow fadeInUp fontbigger " data-wow-delay="0.8s" id="about-p-margin">
-                            <p class="color-yellow">喜歡電腦設計創作 <br>喜歡欣賞具有美感的事物</p>
-                            <p>具有影片製作、程式語言等學習經驗<br> 目前也在修習前端網頁、網際網路程式設計課程
-                            </p>
-                            <p>學習心強的我，總是想挑戰新的事物，促使自己進步，<br>且化為努力的目標，讓現在的每一步都成為未來更堅強的實力。</p>
-
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="background-image about-img"></div>
-                </div>
+            <div id="heading-section">
+                <h4 class="heading">精選專案 FEATURED PROJECTS</h4>
             </div>
         </div>
-    </section>
-    <!-- About Section end-->
 
-    <!-- Service Section start-->
+        <!-- Project1 start-->
+        <section id="project1" class="project">
+            <div class="container card">
+                <div class="row project-reverse">
+                    <div class="col-lg-6 col-md-6 col-sm-12 project-intro">
+                        <div class="project-black mx-3">
+                            <h3 class="keep-all"><strong> Pocket World AR 口袋世界擴增實境</strong>
+                            </h3>
+                            <p>將袖珍展品結合擴增實境，用以改善使用者的觀展體驗。</p>
+                            <h4 class="">#擴增實境 #使用者研究 #TAICHI Poster</h4>
+                            <br>
+                            <a href="./project/pocketWorld.html" class="btn project-tag" data-wow-delay="1.4s">
+                                <h4>了解更多</h4>
+                            </a>
 
-    <section id="service" class="parallax-section">
-        <div class="container">
-            <div class="row">
-                <div class="bg-yellow col-md-6 col-sm-6">
-                    <div class="skill-thumb">
-                        <div class="wow bounceInDown section-title color-white" data-wow-delay="1.2s">
-                            <h3 class="chinesefont">專長</h3>
-                            <p class="color-white">PPT版面設計、威力導演影片製作、文書編輯</p>
-                        </div>
-
-                        <div class=" wow fadeInUp skills-thumb" data-wow-delay="1s">
-                            <strong>PowerPoint</strong>
-                            <span class="color-white pull-right">90%</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-                            </div>
-
-                            <strong>PowerDirector</strong>
-                            <span class="color-white pull-right">80%</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                            </div>
-
-                            <strong>Word、Excel、Publisher</strong>
-                            <span class="color-white pull-right">70%</span>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="bg-white col-md-6 col-sm-6">
-                    <div class="wow bounceInDown service-thumb " data-wow-delay="1.2s">
-                        <!-- <i class="fa fa-html5"></i> -->
-                        <h3 class="chinesefont">其他興趣</h3>
-
-                        <i class="icon-bigger fas fa-cheese"></i>
-                        <i class="icon-bigger fas fa-volleyball-ball"></i>
-                        <i class="icon-bigger fas fa-headphones"></i>
-                        <div>
-                            <span class="interestText">做點心</span>
-                            <span class="interestText">打排球</span>
-                            <span class="interestText">聽音樂</span>
-                        </div>
-                       
-                        <div id="interest">INTEREST</div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Service Section end-->
-
-    <!-- Experience Section start-->
-
-    <section id="experience" class="parallax-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class=" experience-thumb bg-skin">
-                        <div class="wow bounceInDown section-title" data-wow-delay="0.8s">
-                            <h2 id="experience-top"><span class="chinesefont ">經歷</span> EXPERIENCES</h2>
-                        </div>
-
-                        <div class="wow fadeInUp  media" data-wow-delay="0.8s" id="junior">
-                            <div class="media-object media-left">
-                                <i class=" fas fa-school"></i>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading chinesefont1">木柵國中</h3> <small>2012 Sep - 2015 Jun</small>
-                                </h3>
-                            </div>
-                            <ul class="school">
-                                <li class="list-margin">校慶海報設計</li>
-                                <li class="list-margin">牆壁噴漆設計</li>
-                                <li class="list-margin">班級畢業影片製作</li>
-                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="color-white  experience-thumb  bg-yellow1" id="senior">
-                        <div class="wow fadeInUp  media " data-wow-delay="1.2s">
-                            <div class="media-object media-left">
-                                <i class=" fas fa-school"></i>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading chinesefont1">中山女高</h3> <small>2015 Sep - 2018 Jun</small>
-                                </h3>
-                            </div>
-                            <ul class="school">
-                                <li class="list-margin">參加資訊研究社</li>
-                                <li class="list-margin">App Inventor專題製作</li>
-                                <li class="list-margin">農業發展轉型影片製作</li>
-                                <li class="list-margin">加入畢籌攝資組</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="color-white experience-thumb senior bg-orange " id="uni">
-                        <div class="wow fadeInUp  media" data-wow-delay="1.2s">
-                            <div class="media-object media-left">
-                                <i class=" fas fa-school"></i>
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading chinesefont1">臺灣大學</h3> <small>2018 Sep-</small>
-                                </h3>
-                            </div>
-                            <ul class="school">
-                                <li class="list-margin">臺大漁服社美宣長</li>
-                                <li class="list-margin">七美晨光路跑設計組組長</li>
-                                <li class="list-margin">圖資系女排隊長 CONTINUE>></li>
-                              
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Experience Section end-->
-
-    <!-- Award Section start-->
-
-    <section id="education" class="parallax-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="background-image education-img"></div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class=" education-thumb">
-                        <div class="wow bounceInDown section-title award" data-wow-delay="1.2s">
-                            <h3 class="chinesefont ">得獎紀錄</h3>
-                            <i class="fas fa-trophy"></i>
-                            <ul class="school">
-                                <li class="list-margin">新生盃桌球女子團體殿軍</li>
-                                <li class="list-margin">國小、國中、高中市長獎</li>
-                                <li class="list-margin">校內科展競賽化學科 佳作及研究精神獎</li>
-                                <li class="list-margin">核心品格楷模</li>
-                            </ul>
-                        </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <a href="./project/pocketWorld.html">
+                            <img style="width: 100%;" class="center" src="./img/XR競賽.png" alt="Pocket World AR">
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Award Section end-->
-
-
-    <!-- Quotes Section -->
-
-    <section id="quotes" class="parallax-section">
-        <h2 id="work" class="chinesefont  wow bounce" data-wow-delay="0.6s">作品集</h2>
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-
-                <div class=" col-md-3 col-sm-6">
-                    <div class="work-img " id="super"></div>
-                </div>
-                <div class=" col-md-3 col-sm-6">
-                    <div class="work-img " id="piece"></div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="work-img " id="we"></div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="work-img " id="try"></div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <a href="https://hsuchingchun.github.io/FP-p2.html" target="_blank">
-                        <div class="work-img " id="homework2">
-                            <div class="homeworkText chinesefont">self-introduction</div>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <a href="https://hsuchingchun.github.io/FP-p3.html" target="_blank">
-                        <div class="work-img " id="homework3">
-                            <div class="homeworkText1 chinesefont">pricing-table</div>
-                        </div>
-                    </a>
-                </div>
-                <div class=" col-md-12 col-sm-12">
-                    <a href="https://www.facebook.com/runchimei/?epa=SEARCH_BOX" target="_blank">
-                        <div class="work-img " id="homeworkchimei">
-                            <div class="homeworkText chinesefont">七美路跑粉專</div>
-                        </div>
-
-                    </a>
-                </div>
-                <div class=" col-md-6 col-sm-12">
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2CqGUD3SLsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class=" col-md-6 col-sm-12">
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bDj0gf54xy4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                  <div class=" col-md-6 col-sm-12">
-                    <div class="video-container">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/pdzaKCdS9ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                
             </div>
+        </section>
 
-        </div>
+        <!-- Project2 start-->
+        <section id="project2" class="project">
+            <div class="container card">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <a href="./index.html">
+                            <img style="width: 100%;" class="center" src="./img/MoodLight Mockup.png" alt="MoodLight心晴">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 project-intro">
+                        <div class="project-black mx-3">
+                            <h3 class="keep-all"><strong> MoodLight 心晴</strong></World>
+                            </h3>
+                            <p>結合大數據應用，透過快樂日記與快樂清單推薦，有效排解使用者負面情緒，給予自癒能量。</p>
+                            <h4 class="">#大數據 #UI設計 </h4>
+                            <br>
+                            <a href="#about" class="btn project-tag" data-wow-delay="1.4s">
+                                <h4>了解更多</h4>
+                            </a>
 
-    </section>
-
-    <!-- Contact Section -->
-
-    <section id="contact" class="parallax-section">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-sm-12">
-                    <div class="contact-form ">
-                        <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                            <h1 class="color-white chinesefont">Have any questions?</h1>
-                            <p class="color-white">Welcome to leave some messages to me~~
-                            </p>
                         </div>
+                    </div>
 
-                        <div id="contact-form">
-                            <form action="https://formspree.io/5739cherry@gmail.com" method="POST">
-                                <div class="wow fadeInUp" data-wow-delay="1s">
-                                    <input name="username" type="text" class="form-control" id="username" placeholder="Your Name" required>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project3 start-->
+        <section id="project3" class="project">
+            <div class="container card">
+                <div class="row project-reverse">
+                    <div class="col-lg-6 col-md-6 col-sm-12 project-intro">
+                        <div class="project-black mx-3">
+                            <h3 class="keep-all"><strong> Eggy 時光雞</strong></World>
+                            </h3>
+                            <p>藉由Eggy可協助囤物症者判斷物品價值，提升物品丟棄動力，並以小雞破蛋形象，增加互動趣味性。</p>
+                            <h4 class="">#人機互動 #UX設計 #使用者研究</h4>
+                            <br>
+                            <a href="#about" class="btn project-tag" data-wow-delay="1.4s">
+                                <h4>了解更多</h4>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <a href="./index.html">
+                            <img style="width: 80%;" class="center" src="./img/eggy.png" alt="Eggy時光雞">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!--Special Project Section start-->
+        <div class="container ">
+            <div id="heading-section">
+                <h4 class="heading">特別專案 Special PROJECTS</h4>
+            </div>
+        </div>
+        <section id="special-project" class="project">
+            <div class="container px-0 ">
+                <div class="row mx-auto project-center ">
+                    <div class="card col-lg-5 col-md-5 col-sm-12 ">
+                        <div class="row ">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <a href="./index.html">
+                                    <img style="width: 100%;" class="center" src="./img/special-project/dream/dream1.png" alt="A Dream Within a Dream 夢中夢">
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 project-intro">
+                                <div class="project-black mx-3">
+                                    <h3 class="keep-all"><strong>A Dream Within a Dream 夢中夢</strong></World>
+                                    </h3>
+                                    <p>使用Kinect捕捉人影，運用Touchdesigner製作多媒體互動劇場，進行即時互動，結合地板光雕，創造四面白盒子互動體驗空間。</p>
+                                    <h4 class="">#互動設計 #沉浸式劇場 </h4>
+                                    <br>
+                                    <a href="#about" class="btn project-tag" data-wow-delay="1.4s">
+                                        <h4>了解更多</h4>
+                                    </a>
+
                                 </div>
-                                <div class="wow fadeInUp" data-wow-delay="1.2s">
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1"></div>
+                    <div class="card col-lg-5 col-md-5 col-sm-12">
+                        <div class="row project2">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <a href="./index.html">
+                                    <img style="width: 100%;" class="center" src="./img/special-project/createarttalk/cat-web.png" alt="CreateArtTalk 藝擴體工作室">
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 project-intro">
+                                <div class="project-black mx-3">
+                                    <h3 class="keep-all"><strong>CreateArtTalk 藝擴體工作室</strong></World>
+                                    </h3>
+                                    <p>將物聯網IoT技術結合科技藝術的新創團隊，提供藝術創作者多合一的互動IoT管理平台，以降低互動技術門檻。</p>
+                                    <h4 class="">#前端設計 #新創專案 </h4>
+                                    <br>
+                                    <a href="#about" class="btn project-tag" data-wow-delay="1.4s">
+                                        <h4>了解更多</h4>
+                                    </a>
+
                                 </div>
-                                <div class="wow fadeInUp" data-wow-delay="1.4s">
-                                    <textarea name="message" rows="5" class="form-control" id="message" placeholder="Write your message..."></textarea>
-                                </div>
-                                <div class="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.6s">
-                                    <input name="submit" type="submit" class="form-control" id="submit" data-target="#sendtext" value="Send">
-                                </div>
-                            </form>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="background-image contact-img"></div>
-                </div>
-
-                <div class="bg-dark col-md-3 col-sm-6">
-                    <div class="contact-thumb">
-                        <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
-                            <h3 class="color-yellow">Contact Me &nbsp聯絡我</h3>
-                            <p class="color-white"> <i class=" fas fa-school"></i>&nbsp&nbsp&nbspNTULIS 臺灣大學圖資系</p>
-                            <p class="color-white"><i class="fa fa-phone"></i> 0903-711-xxx</p>
-                            <p class="color-white"><i class="fa fa-envelope-o"></i> 5739cherry@gmail.com
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
-        </div>
+        </section>
     </section>
-
-
     <!-- Footer Section -->
 
     <footer>
-        <div class="container">
-            <div class="row">
+        <div class="container ">
+            <div class="row ">
 
-                <div class="col-md-12 col-sm-12">
-                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
-                        <p>Copyright &copy; 2019 HSU, CHING-CHUN | Design &nbspAll Rights Reserved.
+                <div class="col-md-12 col-sm-12 ">
+                    <div class="wow fadeInUp footer-copyright " data-wow-delay="1.8s ">
+                        <p>Copyright &copy; 2023 HSU, CHING-CHUN
+                            <br>All Rights Reserved.
                         </p>
                     </div>
-                    <ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+                    <ul class="wow fadeInUp social-icon " data-wow-delay="2s ">
+
                         <li>
-                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="# " class="fa fa-facebook "></a>
                         </li>
                         <li>
-                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="# " class="fa fa-twitter "></a>
                         </li>
 
 
                         <li>
-                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="# " class="fab fa-instagram "></a>
                         </li>
                     </ul>
                 </div>
@@ -454,14 +248,15 @@ http://www.templatemo.com/tm-498-stimulus
     </footer>
 
     <!-- SCRIPTS -->
-
-    <script src="js/jquery.js "></script>
-    <script src="js/bootstrap.min.js "></script>
-    <script src="js/jquery.parallax.js "></script>
-    <script src="js/smoothscroll.js "></script>
-    <script src="js/wow.min.js "></script>
-    <script src="js/custom.js "></script>
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
+    </script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js " integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N " crossorigin="anonymous "></script>
+    <script src="./js/custom.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js "></script>
+    <script src="js/sketch.js "></script> -->
 </body>
 
 </html>
