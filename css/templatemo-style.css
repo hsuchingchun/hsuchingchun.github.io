@@ -6,7 +6,9 @@ http://www.templatemo.com/tm-498-stimulus
 
 */
 
+
 /* @import url('https://fonts.googleapis.com/css?family=Anton|Noto+Sans+TC|Noto+Serif+TC'); */
+
 body {
     background: #ffffff;
     /* font-family: 'Source Sans Pro', sans-serif; */
@@ -88,15 +90,16 @@ p {
     letter-spacing: 1.5px;
 }
 
-span{
+span {
     font-weight: 700;
 }
-.second-heading{
+
+.second-heading {
     font-size: 20px;
-    color:#F26322;
+    color: #F26322;
 }
 
-li{
+li {
     color: black;
     font-size: 16px;
     font-weight: 300;
@@ -138,6 +141,8 @@ li{
     position: relative;
     padding-bottom: 22px;
 }
+
+
 /* 
 #about,
 #service,
@@ -148,20 +153,15 @@ li{
 } */
 
 #home .container,
-#about .container{
+#about .container {
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
-
-
-
 footer {
     text-align: center;
 }
-
-
 
 .background-image {
     background-position: 50% 50% !important;
@@ -215,8 +215,9 @@ footer {
 .bg-dark {
     background-color: #161616;
 }
+
 .bg-trasparent {
-    background-color:transparent;
+    background-color: transparent;
 }
 
 
@@ -258,16 +259,17 @@ a:focus {
     box-sizing: border-box;
 }
 
+
 /* table */
 
-.table,.table-bordered{
+.table,
+.table-bordered {
     border: #cccccc 1px solid;
 }
 
-th{
+th {
     font-weight: 500;
 }
-
 
 
 /*---------------------------------------
@@ -326,11 +328,12 @@ th{
 /*---------------------------------------
     Navigation section              
 -----------------------------------------*/
-.navbar-shadow{
+
+.navbar-shadow {
     box-shadow: 0 1px 8px .5px rgba(0, 0, 0, 0.1);
 }
 
- .custom-navbar {
+.custom-navbar {
     margin-bottom: 0;
     position: fixed;
     top: 0;
@@ -346,6 +349,7 @@ th{
     letter-spacing: 1px;
 }
 
+
 /* .custom-navbar .nav li a {
     color: #666;
     font-size: 14px;
@@ -355,6 +359,7 @@ th{
     line-height: 40px;
     transition: all 0.4s ease-in-out;
 }  */
+
 
 /* .custom-navbar .nav li a:hover {
     background: transparent;
@@ -385,11 +390,10 @@ th{
     border-color: transparent;
 }  */
 
-
-.nav-link.active{
-    text-decoration: none; 
-    color:black;
-    border-bottom: solid 1px  black;
+.nav-link.active {
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 1px black;
     padding-bottom: 2px;
 }
 
@@ -423,8 +427,6 @@ th{
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 
 /*---------------------------------------
@@ -527,7 +529,12 @@ img.center {
     box-shadow: 0 5px 10px 1px rgba(71, 71, 71, 0.001), inset 0 1px 0 rgba(255, 255, 255, 0.5);
     transform: scale(1.02, 1.02);
     transition: all 0.5s ease-out;
-    border-radius: 0;
+    /* border-radius: 0; */
+}
+
+#poster .card:hover {
+    border: 0;
+    transform: scale(1);
 }
 
 #special-project {
@@ -555,8 +562,10 @@ img.center {
 }
 
 video {
-    width: 100%    !important;
-  }
+    width: 100% !important;
+}
+
+
 /*---------------------------------------
    About section              
 -----------------------------------------*/
@@ -669,12 +678,12 @@ footer {
     strong {
         line-height: 2rem;
     }
-    .second-heading{
+    .second-heading {
         font-size: 16px;
         line-height: inherit;
         margin-left: 20px;
     }
-    li{
+    li {
         font-size: 14px;
         line-height: inherit;
     }
@@ -717,7 +726,7 @@ footer {
     .about-photo {
         padding-top: 80px;
     }
-    video{
+    video {
         height: 100vw;
     }
 }
