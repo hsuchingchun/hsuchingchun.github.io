@@ -12,15 +12,14 @@
      font-family: 'Quattrocento', serif, 'Noto Sans TC', sans-serif;
  }
  
- .text-roboto{
-    font-family: 'Roboto', sans-serif;
+ .text-roboto {
+     font-family: 'Roboto', sans-serif;
  }
  
  .nav-link,
  footer {
      font-family: 'Julius Sans One', sans-serif;
  }
-
  /* .big {
      font-size: 20pt;
      font-weight: 700;
@@ -50,5 +49,6 @@
      animation: typing 2s steps(8), caret 0.5s steps(2) infinite;
      animation-iteration-count: infinite;
      animation-direction: alternate;
+     padding-top: 10px;
      /* 原文網址：https://kknews.cc/news/lp92vkz.html */
  }

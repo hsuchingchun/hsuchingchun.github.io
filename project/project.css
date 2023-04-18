@@ -20,7 +20,7 @@
 
 .title-cover {
     background-color: rgba(255, 255, 255, 0.9);
-    /* padding: 20px 30px; */
+    padding: 20px 30px;
     /* box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1); */
     /* display: flex; */
 }
@@ -136,13 +136,15 @@
 
 @media only screen and (max-width: 580px) {
     #pocketWorld {
-        background-size: auto;
-        background-position-x: -115vw;
+        /* background-size: auto;
+        background-position-x: -115vw; */
+        background: url(../img/feature-project/pocketworld/pocket-cover-sm.png) no-repeat center fixed;
+        background-size: cover;
+        /* background-position-x: center; */
     }
     #moodlight {
         background: url(../img/feature-project/moodlight/hello1.png) no-repeat center fixed;
         background-size: contain;
-        background-position-x: center;
     }
     .project-page {
         display: flex;
@@ -212,7 +214,8 @@
 
 @media only screen and (max-width: 1024px) {
     #pocketWorld {
-        background-size: auto;
+        background: url(../img/feature-project/pocketworld/pocket-cover-sm.png) no-repeat center fixed;
+        background-size: cover;
         /* background-position-x: -115vw; */
     }
     #moodlight {

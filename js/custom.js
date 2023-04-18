@@ -56,7 +56,7 @@ document.addEventListener('scroll', function() {
 // 2. 換顏色
 
 //在navbar封面時，navbar為透明，其餘為白色
-const sectionTrans = document.querySelector('.navbar-trans');
+const sectionTrans = document.querySelector('#home');
 
 const changeColor = (entries, observer) => {
     entries.forEach(entry => {
