@@ -143,8 +143,8 @@
         /* background-position-x: center; */
     }
     #moodlight {
-        background: url(../img/feature-project/moodlight/hello1.png) no-repeat center fixed;
-        background-size: cover;
+        /* background: url(../img/feature-project/moodlight/hello1.png) no-repeat center fixed; */
+        background-size: contain;
     }
     .project-page {
         display: flex;
@@ -190,6 +190,14 @@
     .page-tag {
         font-size: 14px;
         line-height: 18px;
+    }
+    .img-margin {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .moodlight-iframe {
+        width: 80vw;
+        height: 80vh;
     }
 }
 

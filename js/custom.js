@@ -12,54 +12,54 @@
 -------------------------------------------*/
 
 // $(document).ready(function() {
-// document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
+    const options = {};
+    //navbar向下滾動的時候會出現陰影，向上時則消失
+    let lastPos = 0
+    const nav = document.querySelector('.navbar');
 
-//navbar向下滾動的時候會出現陰影，向上時則消失
-let lastPos = 0
-const nav = document.querySelector('.navbar');
-
-// 1. 消失
-document.addEventListener('scroll', function() {
-    let currentPos = window.scrollY;
-    //   往下滑
-    if (currentPos > lastPos) {
-        //往下滑navbar消失
-        nav.style.top = "-60px";
-        nav.classList.remove('navbar-shadow');
-    } else {
-        //往上滑navbar出現，並加陰影
-        nav.style.top = "0px";
-        nav.classList.add('navbar-shadow');
-
-    }
-    lastPos = currentPos;
-});
-
-// 2. 換顏色
-
-//在navbar封面時，navbar為透明，其餘為白色
-
-const section1 = document.getElementById('#home');
-
-const changeColor = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            nav.classList.add('bg-transparent');
+    // 1. 消失
+    document.addEventListener('scroll', function() {
+        let currentPos = window.scrollY;
+        //   往下滑
+        if (currentPos > lastPos) {
+            //往下滑navbar消失
+            nav.style.top = "-60px";
             nav.classList.remove('navbar-shadow');
         } else {
-            nav.classList.remove('bg-transparent');
+            //往上滑navbar出現，並加陰影
+            nav.style.top = "0px";
+            nav.classList.add('navbar-shadow');
+
         }
-    })
+        lastPos = currentPos;
+    });
 
-}
+    // 2. 換顏色
 
-//做一個新的觀察
-let observer = new IntersectionObserver(changeColor);
-//觀察對象section1
-observer.observe(section1);
+    //在navbar封面時，navbar為透明，其餘為白色
+
+    const section1 = document.querySelector('#home');
+
+    const changeColor = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                nav.classList.add('bg-transparent');
+                nav.classList.remove('navbar-shadow');
+            } else {
+                nav.classList.remove('bg-transparent');
+            }
+        })
+
+    }
+
+    //做一個新的觀察
+    let observer = new IntersectionObserver(changeColor);
+    //觀察對象section1
+    observer.observe(section1);
 
 
-// })
+});
 
 
 
