@@ -52,7 +52,7 @@
     </div>
 
 
-    <section id="moodlight" class="project-page navbar-trans">
+    <section id="moodlight" class="project-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12 title-cover">
@@ -83,7 +83,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-12">
                     <p class="project-title"><strong>方法</strong>
                     </p>
-                    <p>使用者研究<br>市場分析<br>Figma 原型</p>
+                    <p>Flow Chart<br>市場分析<br>Figma 原型</p>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12">
                     <p class="project-title"><strong>工具</strong>
@@ -103,11 +103,11 @@
         <a class="list-group-item list-group-item-action" href="#overview">總覽</a>
         <a class="list-group-item list-group-item-action" href="#problem">問題</a>
         <a class="list-group-item list-group-item-action" href="#process">設計過程</a>
-        <a class="ms-3 list-group-item list-group-item-action" href="#research">文獻研究 & 發想</a>
-        <a class="ms-3 list-group-item list-group-item-action" href="#prototype">原型設計</a>
-        <a class="ms-3 list-group-item list-group-item-action" href="#usability">易用性測試</a>
-        <a class="ms-3 list-group-item list-group-item-action" href="#finding">結果 & 迭代</a>
-        <a class="list-group-item list-group-item-action" href="#poster">海報論文</a>
+        <a class="ms-3 list-group-item list-group-item-action" href="#research">文獻研究</a>
+        <a class="ms-3 list-group-item list-group-item-action" href="#userflow">流程設計</a>
+        <a class="ms-3 list-group-item list-group-item-action" href="#workflow">技術運作</a>
+        <a class="ms-3 list-group-item list-group-item-action" href="#uidesign">介面設計</a>
+        <a class="ms-3 list-group-item list-group-item-action" href="#analysis">市場分析</a>
         <a class="list-group-item list-group-item-action" href="#learning">學習</a>
     </div>
 
@@ -120,7 +120,7 @@
                     <div class="col-lg-8 my-3">
                         <h3 class="page-heading"><strong>目標</strong></h3>
                         <p class="content-black">
-                            為受負面情緒所困的人，設計一款 MoodLight APP ，期望藉由使用者數據，透過K-means 分群，採用NoSQL資料庫，提供客製化的情緒記錄日記與活動推薦系統。
+                            為受負面情緒所困的人，設計一款 MoodLight APP ，期望藉由使用者數據，透過K-means 分群，採用NoSQL資料庫，提供客製化的<span class="color-yellow">情緒記錄日記與活動推薦系統</span>，讓使用者逐漸找到生活中的快樂。
                         </p>
                     </div>
 
@@ -137,7 +137,7 @@
 
                     <div class="col-lg-8 my-3">
                         <h3 class="page-heading"><strong>原型</strong></h3>
-                        <div class="center">
+                        <div class="center mx-3">
                             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqCuuHUTKLu5B8fWuqVXkeH%2FMoodlight%3Fpage-id%3D0%253A1%26node-id%3D267-96%26starting-point-node-id%3D267%253A96"
                                 allowfullscreen></iframe>
                         </div>
@@ -151,13 +151,12 @@
                 <h4 class="heading project-heading my-4">問題 Problem</h4>
                 <div class="row justify-content-center">
                     <div class="col-lg-8 my-3">
-                        <h3 class="page-heading mb-3"><strong>袖珍藝術作品包含多種的小物件與精緻的細節，所以對觀眾而言，想要仔細觀賞清楚是有困難的。</strong></h3>
-                        <p class="content-black">袖珍展品因為提供了一個微小世界的視角而備受歡迎，但根據自身經驗的觀察，我們發現以下四點會造成觀賞袖珍展品的限制：
-                            <br class="mt-3"> 1. 作品本身微小的體積
-                            <br> 2. 觀看視角或操作角度限制
-                            <br> 3. 視線死角和盲區
-                            <br> 4. 放置於博物館玻璃櫥窗櫃中造成的反光
-                        </p>
+                        <h3 class="page-heading mb-3"><strong>在高壓的社會下，受負面情緒所困的人日益漸增，學習適當且即時地排解自我情緒，是非常重要的。</strong></h3>
+                        <div class="content-black">
+                            <p>根據2021年世界衛生組織的調查，全世界有2.8億人口患有憂鬱症，在新冠疫情的肆虐下，狀況也越發嚴重。倘若一個人的負面情緒不斷地累積且無法適當排解時，將嚴重影響身心靈健康，甚至危及性命，該如何調適負面情緒已成為當今不容忽視的問題。
+                            </p>
+                            <p>現今社會上已存在許多協助改善憂鬱情緒的方法與工具，但如何客製化且即時的抒發情緒是待解決之道。</p>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -167,108 +166,97 @@
                 <h4 class="heading my-4 project-heading">設計過程 Process</h4>
                 <div class="row justify-content-center">
                     <div id="research" class="col-lg-8 my-3">
-                        <!-- <h3 class="page-heading color-yellow"><strong>文獻研究→發想→原型設計→易用性測試→迭代</strong></h3> -->
-                        <h3 class="page-heading my-3"><strong>01 文獻研究 & 發想</strong></h3>
-                        <p class="second-heading"><strong>沉浸式科技的選擇</strong></p>
+                        <h3 class="page-heading my-3"><strong>01 文獻研究</strong></h3>
+                        <p class="second-heading"><strong>快樂方程式：快樂可以自己掌握</strong></p>
                         <div class="content-black">
-                            <p>我們將研究重點鎖定在使用者、袖珍藝術作品和痛點上，從文獻研究中發現，採用沉浸式科技能夠幫助使用者突破實際場域上的空間限制，增強參與感、有趣性和互動性。
+                            <p>正向心理學家之父馬丁（Martin Seligman）曾提出快樂方程式：
                             </p>
-                            <p>而其中 AR 又相比 VR，使用者能夠擁有較大的自由度，在採用新科技的同時，保留在博物館的參觀經驗，與將注意力集中於實體的展品上。而且，若採用 VR 可能會容易導致觀眾有暈眩感產生，降低整體的觀賞感受。
-                            </p>
-                        </div>
-                        <p class="second-heading pt-4 "><strong>當袖珍藝術導入 <span style="font-weight: 700;">AR</span></strong></p>
-                        <div class="content-black">
-                            <p>翻閱過往的文獻會發現，以往 AR 的研究多著重在 2D 物件的延伸，或是正常尺寸的 3D 作品上，例如畫作、動物骨架等等，較少有研究將 AR運用在微小的藝術作品上。
+                            <div class="text-center mb-2">
+                                <h3><span>H = S + C + V</span></h3>
+                                <span class="keep-all">Enduring Level of Happiness = Set Range + Circumstances + Voluntary Control</span>
+                            </div>
+                            <p>馬丁認為決定一個人是否能長久感到快樂的因素，有50% 來自先天的個性影響（S），10% 來自環境（C），而有 40% 則可以藉由個人的努力獲得 （V），故是否能感到快樂約有一半是源自於自身的選擇。人會感到快樂，主要是藉由做自己喜歡的事情情，如：繪畫、閱讀、運動等，這些活動刺激感官，使腦內的多巴胺或腦內啡產生，提升幸福感。
                             </p>
                         </div>
                     </div>
 
-                    <div id="prototype" class="col-lg-8 my-3 mt-5">
-                        <!-- <h3 class="page-heading color-yellow"><strong>文獻研究→發想→原型設計→易用性測試→迭代</strong></h3> -->
-                        <h3 class="page-heading mb-3"><strong>02 原型設計</strong></h3>
+                    <div id="userflow" class="col-lg-8 my-3">
+                        <h3 class="page-heading my-3"><strong>02 流程設計</strong></h3>
+                        <p class="second-heading"><strong>如何讓使用者有效排解負面情緒？</strong></p>
+                        <div class="row list-padding ">
+                            <ui class="content-black ">
+                                <p>MoodLight 旨在幫助使用者透過每日的心情紀錄，協助正視自我的情緒狀況，同時蒐集每日使用數據與日記紀錄分析，讓使用者能重拾正能量，找到屬於自己的快樂方程式。
+                                </p>
+                                <p>主要提供兩大功能：</p>
+                                <li class="mb-2 "><span>快樂日記：</span>心情愉悅時，撰寫快樂日記記錄美好心情</li>
+                                <li class="my-2 "><span>快樂清單推薦：</span>心情低落時，透過大數據運算，獲得客製化解決方法</li>
+                            </ui>
+                        </div>
+                        <img class="my-3 mx-3" width="100%" src="../img/feature-project/moodlight/moodlight-userflow.png" alt="MoodLight 使用者流程圖">
+                    </div>
+
+                    <div id="workflow" class="col-lg-8 my-3 mt-5">
+                        <h3 class="page-heading mb-3"><strong>03 技術運作</strong></h3>
                         <div class="content-black">
-                            <p>我們透過 MAKAR 平台共設計三種觀賞袖珍展品模式，包含 Pocket PALM、Pocket MEGA、Guilliver World，分別採用圖片辨識、空間辨識與第三人稱視角、第一人稱視角，使用者可以透過行動裝置啟用 AR 觀賞模型。
+                            <p>人可以透過自身的行為來獲取快樂因子，因此 MoodLight 希望收集使用者的偏好數據，建立客製化推薦資料庫，並透過集群分析（K-means clustering）的方式，類聚特徵相似的使用者數據，給予最匹配的的快樂清單推薦。
                             </p>
                         </div>
+                        <img class="my-2 mx-3" width="100%" src="../img/feature-project/moodlight/moodlight-flowchart.png" alt="MoodLight 數據蒐集流程圖">
 
-                        <!-- Pocket PALM -->
+                        <!-- 數據來源 -->
                         <div class="row justify-content-center mt-5">
-                            <div class="col-lg-7 col-md-6 col-sm- my-auto">
-                                <p class="pt-4 second-heading"><strong>
-                                    <span style="font-weight: 700;">1. Pocket PALM </span>
-                                        <br>
+                            <div class="col-lg-5 col-md-4 my-auto">
+                                <p class="pt-4 second-heading"><strong>數據來源一：快樂日記比對
                                 </strong>
-                                    <strong>採用圖片辨識 <span> AR</span>
-                                    ，使用者須掃描特定圖片以啟動 <span style="font-weight: 700;">AR</span> 模型</strong>
                                 </p>
-                                <div class="row list-padding">
-                                    <ui class="content-black">
-                                        <li>放大旋轉 AR 模型，可觀看展品的各細節角落</li>
-                                        <li>點擊介紹卡片，了解更多袖珍屋的資訊</li>
-                                    </ui>
+                                <div class="content-black">
+                                    <p>根據使用者過去所填寫的快樂日記內容，推薦以前曾讓他感到愉快的活動。</p>
                                 </div>
                             </div>
-                            <div class="col-lg-1 col-md-1 "></div>
-                            <div class="col-lg-4 col-md-4 col-sm-5 mx-auto">
-                                <video playsinline loop autoplay muted controls preload="auto">
-                                    <source src="../video/PocketPALM.mp4" type="video/mp4">
-                                </video>
+                            <!-- <div class="col-lg-1 col-md-1 "></div> -->
+                            <div class="col-lg-7 col-md-8 col-sm-5 mx-auto">
+                                <img class="my-2 mx-3" width="100%" src="../img/feature-project/moodlight/diary-analysis.png" alt="MoodLight 快樂日記比對">
                             </div>
                         </div>
 
-                        <!-- Pocket MEGA -->
                         <div class="row justify-content-center mt-5 project-reverse">
-                            <div class="col-lg-4 col-md-4 col-sm-5 mx-auto">
-                                <video playsinline loop autoplay muted controls preload="auto">
-                                    <source src="../video/PocketMEGA.mp4" type="video/mp4">
-                                </video>
+                            <div class="col-lg-7 col-md-8 col-sm-5 mx-auto">
+                                <img class="my-2" width="100%" src="../img/feature-project/moodlight/clustering.png" alt="MoodLight 分群使用者推薦">
                             </div>
-                            <div class="col-lg-1 col-md-1"></div>
-                            <div class="col-lg-7 col-md-6 my-auto">
-                                <p class="pt-4 second-heading"><strong>
-                                    <span>2. Pocket MEGA </span>
-                                        <br>
+                            <div class="col-lg-5 col-md-4 my-auto">
+                                <p class="pt-4 second-heading"><strong>數據來源二：分群使用者推薦
                                 </strong>
-                                    <strong>採用空間辨識，使用者可以掃描各式實體平台，以觀賞虛擬模型</strong>
                                 </p>
-                                <div class="row list-padding">
-                                    <ui class="content-black">
-                                        <li>靠近或 360° 環繞觀賞虛擬袖珍模型</li>
-                                        <li>點擊下方按鈕選擇想要觀看的 AR 模型</li>
-                                    </ui>
+                                <div class="content-black">
+                                    <p>為依據和使用者擁有類似興趣的群體中，推薦會讓該群體放鬆心情的行為。</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Gulliver World -->
-                        <div class="row justify-content-center my-5">
-                            <div class="col-lg-7 col-md-6 col-sm- my-auto">
-                                <p class="pt-4 second-heading"><strong>
-                                    <span>3. Gulliver World </span>
-                                        <br>
-                                    </strong>
-                                    <strong>結合空間辨識與視角轉換，讓使用者可以透過第一視角觀看</strong>
-                                </p>
-                                <div class="row list-padding">
-                                    <ui class="content-black">
-                                        <li>採用第一人稱視角觀看</li>
-                                        <li>彷彿置身袖珍屋中，觀賞內部結構與裝飾設計</li>
-                                    </ui>
-                                </div>
-                            </div>
-                            <div class="col-lg-1 col-md-1"></div>
-                            <div class="col-lg-4 col-md-4 col-sm-5 mx-auto">
-                                <video playsinline loop autoplay muted controls preload="auto">
-                                    <source src="../video/GulliverWorld.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
                     </div>
 
-                    <div id="usability" class="col-lg-8 my-5">
-                        <!-- <h3 class="page-heading color-yellow"><strong>文獻研究→發想→原型設計→易用性測試→迭代</strong></h3> -->
-                        <h3 class="page-heading my-3"><strong>03 易用性測試</strong></h3>
-                        <!-- <p class="second-heading"><strong>沉浸式科技的選擇</strong></p> -->
+                    <div id="uidesign" class="col-lg-8 my-5">
+                        <h3 class="page-heading my-3"><strong>04 介面設計</strong></h3>
+                        <div class="mx-3">
+                            <img class="mb-3 mx-3" width="100%" src="../img/feature-project/moodlight/moodlight-mockup-grey.png" alt="MoodLight 分群使用者推薦">
+                        </div>
+                        <div class="row justify-content-center my-5">
+                            <div class="col-lg-4 col-md-4 col-sm-5 mx-auto">
+                                <img class="mb-3 mx-3" width="100%" src="../img/feature-project/moodlight/m-light.png" alt="MoodLight 姆姆形象">
+                            </div>
+
+                            <div class="col-lg-8 col-md-6 col-sm- my-auto">
+                                <div class="row list-padding">
+                                    <ui class="content-black">
+                                        <li class="mb-2 "><span>風格：</span>與美術設計合作，設計可愛溫馨的姆姆形象</li>
+                                        <li class="my-2 "><span>色調：</span>淺藍色帶給人平靜感受</li>
+                                        <li class="my-2 "><span>流程：</span>點選形式記錄日記，簡化步驟</li>
+                                    </ui>
+                                </div>
+                            </div>
+
+                        </div>
+
                         <div class="content-black">
                             <p>我們邀請35位受試者分為兩組進行遠端易用性測試和訪談，用以了解使用者使用Pocket World AR 觀賞袖珍作品的回饋。
                             </p>
@@ -292,9 +280,8 @@
                             </p>
                         </div>
                     </div>
-                    <div id="usability" class="col-lg-8 my-5">
-                        <!-- <h3 class="page-heading color-yellow"><strong>文獻研究→發想→原型設計→易用性測試→迭代</strong></h3> -->
-                        <h3 class="page-heading my-3"><strong>03 易用性測試</strong></h3>
+                    <div id="analysis" class="col-lg-8 my-5">
+                        <h3 class="page-heading my-3"><strong>05 市場分析</strong></h3>
                         <div class="content-black">
                             <p>我們邀請35位受試者分為兩組進行遠端易用性測試和訪談，用以了解使用者使用Pocket World AR 觀賞袖珍作品的回饋。
                             </p>
@@ -408,7 +395,7 @@
             </div>
         </section>
 
-        <section id="learning" class="list-item" style="background-color: rgba(254, 200, 4, 0.1);">
+        <section id="learning" class="list-item">
             <div class="container">
                 <h4 class="heading my-4 project-heading">學習 Learning</h4>
                 <div class="row justify-content-center">

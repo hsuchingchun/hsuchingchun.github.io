@@ -12,25 +12,7 @@
 -------------------------------------------*/
 
 // $(document).ready(function() {
-
-
-/*-------------------------------------------------------------------------------
-  Navigation - Hide mobile menu after clicking on a link
--------------------------------------------------------------------------------*/
-
-// $('.navbar-collapse a').click(function() {
-//     $(".navbar-collapse").collapse('hide');
-// });
-
-
-// $(window).scroll(function() {
-//     if ($(".navbar").offset().top > 50) {
-//         $(".navbar-fixed-top").addClass("top-nav-collapse");
-//     } else {
-//         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-//     }
-// });
-
+// document.addEventListener("DOMContentLoaded", () => {
 
 //navbar向下滾動的時候會出現陰影，向上時則消失
 let lastPos = 0
@@ -56,7 +38,8 @@ document.addEventListener('scroll', function() {
 // 2. 換顏色
 
 //在navbar封面時，navbar為透明，其餘為白色
-const sectionTrans = document.querySelector('#home');
+
+const section1 = document.getElementById('#home');
 
 const changeColor = (entries, observer) => {
     entries.forEach(entry => {
@@ -65,14 +48,39 @@ const changeColor = (entries, observer) => {
             nav.classList.remove('navbar-shadow');
         } else {
             nav.classList.remove('bg-transparent');
-            //    nav.classList.add('navbar-shadow');
         }
     })
 
 }
 
+//做一個新的觀察
 let observer = new IntersectionObserver(changeColor);
-observer.observe(sectionTrans);
+//觀察對象section1
+observer.observe(section1);
+
+
+// })
+
+
+
+
+
+/*-------------------------------------------------------------------------------
+  Navigation - Hide mobile menu after clicking on a link
+-------------------------------------------------------------------------------*/
+
+// $('.navbar-collapse a').click(function() {
+//     $(".navbar-collapse").collapse('hide');
+// });
+
+
+// $(window).scroll(function() {
+//     if ($(".navbar").offset().top > 50) {
+//         $(".navbar-fixed-top").addClass("top-nav-collapse");
+//     } else {
+//         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+//     }
+// });
 
 
 /*-------------------------------------------------------------------------------
