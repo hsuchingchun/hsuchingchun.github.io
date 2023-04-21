@@ -10,6 +10,12 @@
     background-position-x: 15vw;
 }
 
+#exshare {
+    background: url(../img/feature-project/exshare/mockup-ex.png) no-repeat center fixed;
+    background-size: cover;
+    /* background-position-x: 20vw; */
+}
+
 .project-page,
 .list-item {
     display: flex;
@@ -156,11 +162,15 @@
         background-position-x: -115vw; */
         background: url(../img/feature-project/pocketworld/pocket-cover-sm.png) no-repeat center fixed;
         background-size: cover;
-        /* background-position-x: center; */
     }
     #moodlight {
         background: url(../img/feature-project/moodlight/hello1.png) no-repeat center fixed;
         background-size: cover;
+    }
+    #exshare {
+        background: url(../img/feature-project/exshare/mockup2-ex.png) no-repeat center fixed;
+        background-size: cover;
+        background-position-y: -15vw;
     }
     .project-page {
         display: flex;
@@ -212,8 +222,12 @@
         padding-right: 16px;
     }
     .moodlight-iframe {
-        width: 80vw;
+        width: 60vw;
         height: 80vh;
+    }
+    .ex-iframe {
+        width: 80vw;
+        height: 50vh;
     }
 }
 
