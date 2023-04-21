@@ -14,7 +14,8 @@
 .list-item {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: var(--doc-height);
+    ;
     max-width: 100vw;
 }
 
