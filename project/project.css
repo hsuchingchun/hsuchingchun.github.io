@@ -22,6 +22,12 @@
     /* background-position-x: 20vw; */
 }
 
+#createarttalk {
+    background: url(../img/special-project/createarttalk/cover-cat.png) no-repeat center fixed;
+    background-size: cover;
+    /* background-position-x: 20vw; */
+}
+
 .project-page,
 .list-item {
     display: flex;
