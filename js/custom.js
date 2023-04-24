@@ -12,87 +12,87 @@
 -------------------------------------------*/
 
 // $(document).ready(function() {
-document.addEventListener("DOMContentLoaded", function() {
-    //navbar向下滾動的時候會出現陰影，向上時則消失
-    let lastPos = 0
-    const nav = document.querySelector('.navbar');
-    // 1. 消失
-    document.addEventListener('scroll', function() {
-        let currentPos = window.scrollY;
+// document.addEventListener("DOMContentLoaded", function() {
+//navbar向下滾動的時候會出現陰影，向上時則消失
+let lastPos = 0
+const nav = document.querySelector('.navbar');
+// 1. 消失
+document.addEventListener('scroll', function() {
+    let currentPos = window.scrollY;
 
-        //   往下滑
-        if (currentPos > lastPos) {
-            //往下滑navbar消失
-            nav.style.top = "-60px";
-            nav.classList.remove('navbar-shadow');
-        } else {
-            //往上滑navbar出現，並加陰影
-            nav.style.top = "0px";
-            nav.classList.add('navbar-shadow');
-
-        }
-        lastPos = currentPos;
-    });
-
-    // 2. 換顏色
-
-    //在navbar封面時，navbar為透明，其餘為白色
-
-    const section1 = document.querySelector('.navbar-trans');
-    const listexample = document.querySelector('#list-example');
-
-    const changeColor = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                nav.classList.add('bg-transparent');
-                nav.classList.remove('navbar-shadow');
-                listexample.style.display = "none";
-            } else {
-                nav.classList.remove('bg-transparent');
-                if (IsPC()) {
-                    listexample.style.display = "block";
-                } else {
-                    listexample.style.display = "none";
-                }
-            }
-        })
+    //   往下滑
+    if (currentPos > lastPos) {
+        //往下滑navbar消失
+        nav.style.top = "-60px";
+        nav.classList.remove('navbar-shadow');
+    } else {
+        //往上滑navbar出現，並加陰影
+        nav.style.top = "0px";
+        nav.classList.add('navbar-shadow');
 
     }
-
-    //做一個新的觀察
-    let observer = new IntersectionObserver(changeColor);
-    //觀察對象section1
-    observer.observe(section1);
-
-
-
-
-    //手機高度修整
-    const documentHeight = () => {
-        const doc = document.documentElement
-        doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
-    }
-    window.addEventListener('resize', documentHeight)
-    documentHeight()
-
-
-    //from https://github.com/capeta0507/JS_PC_MOBILE
-    function IsPC() {
-        var userAgentInfo = navigator.userAgent;
-        // Agents 字串陣列來判斷是否為手機裝置
-        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
-        var flag = true;
-        for (var v = 0; v < Agents.length; v++) {
-            let findIndex = userAgentInfo.indexOf(Agents[v]);
-            // console.log(v, Agents[v], findIndex);
-            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
-        }
-        return flag;
-    }
-
-
-
+    lastPos = currentPos;
 });
+
+// 2. 換顏色
+
+//在navbar封面時，navbar為透明，其餘為白色
+
+const section1 = document.querySelector('.navbar-trans');
+const listexample = document.querySelector('#list-example');
+
+const changeColor = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            nav.classList.add('bg-transparent');
+            nav.classList.remove('navbar-shadow');
+            listexample.style.display = "none";
+        } else {
+            nav.classList.remove('bg-transparent');
+            if (IsPC()) {
+                listexample.style.display = "block";
+            } else {
+                listexample.style.display = "none";
+            }
+        }
+    })
+
+}
+
+//做一個新的觀察
+let observer = new IntersectionObserver(changeColor);
+//觀察對象section1
+observer.observe(section1);
+
+
+
+
+//手機高度修整
+const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+}
+window.addEventListener('resize', documentHeight)
+documentHeight()
+
+
+//from https://github.com/capeta0507/JS_PC_MOBILE
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    // Agents 字串陣列來判斷是否為手機裝置
+    var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        let findIndex = userAgentInfo.indexOf(Agents[v]);
+        // console.log(v, Agents[v], findIndex);
+        if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+    }
+    return flag;
+}
+
+
+
+// });
 
 
 

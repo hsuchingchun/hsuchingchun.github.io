@@ -16,6 +16,12 @@
     /* background-position-x: 20vw; */
 }
 
+#dream {
+    background: url(../img/special-project/dream/cover-dream.png) no-repeat center fixed;
+    background-size: cover;
+    /* background-position-x: 20vw; */
+}
+
 .project-page,
 .list-item {
     display: flex;
@@ -30,6 +36,12 @@
     padding: 20px 30px;
     /* box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1); */
     /* display: flex; */
+}
+
+.title-cover-black {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 20px 30px;
 }
 
 .project-card {
@@ -180,9 +192,14 @@
         background-color: rgba(255, 255, 255, 0.8);
     }
     .title-cover {
-        background-color: rgba(255, 255, 255, 0.9);
+        /* background-color: rgba(255, 255, 255, 0.9); */
         border-radius: 20px 20px 0 0;
         box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .title-cover-black {
+        border-radius: 20px 20px 0 0;
+        box-shadow: 2px 0px 8px 2px rgba(255, 255, 255, 0.1);
         text-align: center;
     }
     #role-card {
@@ -229,6 +246,13 @@
         width: 80vw;
         height: 50vh;
     }
+    .dream-iframe {
+        height: 200px;
+        padding: 0 20px;
+    }
+    /* #performance {
+        min-height: 50vh;
+    } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -268,9 +292,14 @@
         background-color: rgba(255, 255, 255, 0.8);
     }
     .title-cover {
-        background-color: rgba(255, 255, 255, 0.9);
+        /* background-color: rgba(255, 255, 255, 0.9); */
         border-radius: 20px 20px 0 0;
         box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .title-cover-black {
+        border-radius: 20px 20px 0 0;
+        box-shadow: 2px 0px 8px 2px rgba(255, 255, 255, 0.1);
         text-align: center;
     }
     #role-card {
