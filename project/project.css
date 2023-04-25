@@ -190,6 +190,10 @@
         background-size: cover;
         background-position-y: -15vw;
     }
+    #createarttalk {
+        background: url(../img/special-project/createarttalk/cover-m-cat.png) no-repeat center fixed;
+        background-size: cover;
+    }
     .project-page {
         display: flex;
         align-items: end;
