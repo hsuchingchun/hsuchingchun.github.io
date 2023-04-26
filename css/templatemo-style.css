@@ -478,8 +478,12 @@ th {
     padding-top: 10px;
 }
 
-#about .project-black {
-    padding-left: 30px;
+.content-black {
+    border-left: 1px solid #000;
+    color: #000;
+    line-height: 30px;
+    margin-left: 5px;
+    padding-left: 20px;
 }
 
 .project-tag {
@@ -606,6 +610,26 @@ h3 .bi {
     border-radius: 50%;
     background-color: #dddddd;
 } */
+
+#resume li {
+    font-weight: 500;
+}
+
+.resume-btn {
+    border: #999 1px solid;
+    /* border-radius: 5px; */
+    padding: 10px 10px;
+    color: #999;
+    font-size: medium;
+}
+
+.resume-btn:hover {
+    border: white 1px solid;
+    padding: 10px 10px;
+    background-color: #FEC804;
+    color: white;
+    font-size: medium;
+}
 
 
 /*---------------------------------------
