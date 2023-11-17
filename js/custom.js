@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
     preloader.style.opacity = '0'; // gradually update the opacity to 0
     setTimeout(function() {
         preloader.style.display = 'none'; // hide the preloader after the transition completes
-    }, 500); // wait for 0.5 seconds before hiding the preloader
+    }, 10); // wait for 0.5 seconds before hiding the preloader
 });
 
 /* HTML document is loaded. DOM is ready. 
