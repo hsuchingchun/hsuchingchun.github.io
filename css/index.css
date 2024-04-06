@@ -9,10 +9,21 @@
      float: left;
  }
 
+ /* * {
+     outline: solid #f00 1px !important;
+     background: #000 !important;
+     color: #fff !important;
+ } */
+
+ /* html {
+     overflow-x: hidden;
+ } */
+
  body {
      font-family: 'Quattrocento', serif, 'Noto Sans TC', sans-serif;
-     overflow-x: hidden;
+
  }
+
 
  .text-roboto {
      font-family: 'Roboto', sans-serif;
@@ -83,6 +94,8 @@
      justify-content: space-around;
      align-items: center;
      height: 200px;
+     /* width: 500px; */
+
  }
 
  .el {
@@ -90,7 +103,7 @@
      height: 50px;
      /* background-color: #f00; */
      color: #fff;
-     display: flex;
+     /* display: flex; */
      justify-content: center;
      align-items: center;
  }

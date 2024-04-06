@@ -2,14 +2,14 @@
   PRE LOADER
 -------------------------------------------------------------------------------*/
 
-window.addEventListener("load", function () {
-  var preloader = document.querySelector(".preloader");
-  preloader.style.transition = "opacity .05s ease-in-out"; // set the transition property
-  preloader.style.opacity = "0"; // gradually update the opacity to 0
-  setTimeout(function () {
-    preloader.style.display = "none"; // hide the preloader after the transition completes
-  }, 10); // wait for 0.5 seconds before hiding the preloader
-});
+// window.addEventListener("load", function () {
+//   var preloader = document.querySelector(".preloader");
+//   preloader.style.transition = "opacity .05s ease-in-out"; // set the transition property
+//   preloader.style.opacity = "0"; // gradually update the opacity to 0
+//   setTimeout(function () {
+//     preloader.style.display = "none"; // hide the preloader after the transition completes
+//   }, 10); // wait for 0.5 seconds before hiding the preloader
+// });
 
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/

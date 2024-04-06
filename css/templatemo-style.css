@@ -429,6 +429,7 @@ th {
     background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
     /* background: url(../img/home_bg.png) no-repeat center fixed; */
     background-size: cover;
+    overflow-x: hidden;
 }
 
 
@@ -807,6 +808,10 @@ footer {
 
     .img-mobile {
         height: 200px;
+    }
+
+    .custom-navbar {
+        /* width: 90px; */
     }
 }
 
