@@ -84,7 +84,7 @@ strong {
     line-height: 2.5rem;
 }
 
-p{
+p {
     color: #888;
     font-size: 16px;
     font-weight: 300;
@@ -92,7 +92,8 @@ p{
     letter-spacing: 1.5px;
 }
 
-td,th{
+td,
+th {
     color: #888;
     font-size: 16px;
     font-weight: 300;
@@ -348,7 +349,8 @@ th {
     margin-bottom: 0;
     position: fixed;
     top: 0;
-    background-color: #ffffff;
+    backdrop-filter: blur(5px);
+    /* background-color: #ffffff; */
 }
 
 .custom-navbar .navbar-brand {
@@ -413,24 +415,38 @@ th {
     Home section              
 -----------------------------------------*/
 
-.home {
-    border-left: 1px solid black;
-    max-height: 170px;
-    max-width: 340px;
-    transform: translate(0, 10vh);
-    font-family: 'Quattrocento';
-    font-size: 14px;
-    line-height: 22px;
-    bottom: 20px;
-}
+
 
 #home {
     display: flex;
     align-items: center;
+    justify-content: left;
     min-height: 100vh;
     max-width: 100vw;
-    background: url(../img/home_bg.png) no-repeat center fixed;
+    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+    /* background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%); */
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    /* background: url(../img/home_bg.png) no-repeat center fixed; */
     background-size: cover;
+}
+
+
+
+.home {
+    /* border-left: 1px solid black; */
+    /* max-height: 170px; */
+    max-width: 340px;
+    transform: translate(0, 10vh);
+    /* font-family: 'Quattrocento'; */
+    font-size: 14px;
+    line-height: 22px;
+    bottom: 20px;
+    backdrop-filter: blur(10px);
+    /* opacity: 0.8; */
+    background-color: (0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .container-fluid {
@@ -538,6 +554,8 @@ img.center {
 .card {
     border: 0px solid #dddddd;
     padding: 20px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .card:hover {
@@ -704,33 +722,41 @@ footer {
     h1 {
         font-size: 30px;
     }
+
     h2 {
         font-size: 28px;
         line-height: inherit;
     }
+
     h3 {
         font-size: 22px;
         line-height: inherit;
     }
+
     p {
         font-size: 14px;
         line-height: inherit;
     }
+
     strong {
         line-height: 2rem;
     }
+
     .second-heading {
         font-size: 16px;
         line-height: inherit;
         margin-left: 20px;
     }
+
     li {
         font-size: 14px;
         line-height: inherit;
     }
+
     .heading {
         font-size: small;
     }
+
     .heading::before,
     .heading::after {
         content: "";
@@ -741,15 +767,18 @@ footer {
         margin-right: 10px;
         margin-left: 10px;
     }
+
     #heading-section {
         display: flex;
         justify-content: center;
         margin: 50px 0;
     }
+
     img.center {
         margin-bottom: 20px;
         padding: 0 5px;
     }
+
     .card {
         border: 1px solid #dddddd;
         margin-bottom: 20px;
@@ -757,19 +786,24 @@ footer {
         padding-right: 20px;
         padding-left: 20px;
     }
+
     .project-reverse {
         display: flex;
         flex-direction: column-reverse;
     }
+
     #about .container {
         padding: 0 0;
     }
+
     .about-photo {
         padding-top: 80px;
     }
+
     video {
         height: 100vw;
     }
+
     .img-mobile {
         height: 200px;
     }
@@ -779,22 +813,27 @@ footer {
     .custom-navbar .navbar-brand {
         line-height: 18px;
     }
+
     .home {
         max-width: 300px;
         bottom: 40px;
     }
+
     .project {
         margin: auto 20px;
     }
+
     #heading-section {
         display: flex;
         justify-content: center;
         margin: 45px 0;
     }
+
     img.center {
         margin-bottom: 20px;
         padding: 0 5px;
     }
+
     .card {
         border: 1px solid #dddddd;
         margin-bottom: 20px;
@@ -802,25 +841,31 @@ footer {
         padding-right: 20px;
         padding-left: 20px;
     }
+
     .project-reverse {
         display: flex;
         flex-direction: column-reverse;
     }
+
     #home .container-fluid {
         padding-right: 15px;
         padding-left: 15px;
     }
+
     #about .container {
         padding: 0 0;
     }
+
     #about .project-black {
         margin-top: 20px;
         margin-left: 0;
     }
+
     .about-photo {
         justify-content: center;
         padding-top: 50px;
     }
+
     .background-image {
         position: relative;
         min-height: 65vh;
@@ -833,16 +878,20 @@ footer {
         border-bottom: 0;
         background: white;
     }
+
     .section-title {
         padding-bottom: 12px;
     }
+
     #about .container {
         padding: 0 0;
     }
+
     #about .project-black {
         margin-top: 40px;
         margin-left: 0;
     }
+
     footer {
         padding: 40px 0;
     }
