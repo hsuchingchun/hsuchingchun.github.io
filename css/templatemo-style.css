@@ -346,6 +346,7 @@ th {
 }
 
 .custom-navbar {
+    width: 100vw;
     margin-bottom: 0;
     position: fixed;
     top: 0;
@@ -434,7 +435,7 @@ th {
 
 .home {
     /* border-left: 1px solid black; */
-    /* max-height: 170px; */
+    max-height: 300px;
     max-width: 340px;
     transform: translate(0, 10vh);
     /* font-family: 'Quattrocento'; */

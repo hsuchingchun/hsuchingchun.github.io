@@ -1,7 +1,17 @@
 anime({
   targets: ".function-based-values-demo .el",
   translateX: function (el) {
-    return el.getAttribute("data-x");
+    var screenWidth = window.innerWidth;
+    var dataX = parseInt(el.getAttribute("data-x"));
+    if (screenWidth <= 580) {
+      // Adjust data-x for mobile screens
+      dataX = dataX * 0.8; // Example adjustment, you can adjust this as needed
+    }
+    if (screenWidth <= 768) {
+      // Adjust data-x for mobile screens
+      dataX = dataX * 0.4; // Example adjustment, you can adjust this as needed
+    }
+    return dataX;
   },
   translateY: function (el, i) {
     return 50 + -50 * i;

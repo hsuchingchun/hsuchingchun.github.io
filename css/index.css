@@ -11,6 +11,7 @@
 
  body {
      font-family: 'Quattrocento', serif, 'Noto Sans TC', sans-serif;
+     overflow-x: hidden;
  }
 
  .text-roboto {
@@ -68,11 +69,14 @@
      /* 使用漸層顏色 */
      position: absolute;
      top: 30%;
-     left: 20%;
+     left: 25%;
      transform: translate(-50%, -50%);
      filter: blur(2px);
      /* 添加模糊效果，10px 是模糊半徑 */
  }
+
+
+
 
  .function-based-values-demo {
      display: flex;
@@ -95,3 +99,49 @@
 
  /* 作者：南极一块修炼千年的大冰块 链接：https: //juejin.cn/post/6975531630836318222 */
  /* 来源：稀土掘金 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 */
+
+ @media only screen and (max-width: 580px) {
+     .circle {
+         width: 50px;
+         /* 調整圓的直徑 */
+         height: 50px;
+         /* 調整圓的直徑 */
+         border-radius: 50%;
+         /* 讓元素變成圓形 */
+         background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+         /* 使用漸層顏色 */
+         position: absolute;
+         top: 30%;
+         left: 30%;
+         transform: translate(-50%, -50%);
+         filter: blur(2px);
+         /* 添加模糊效果，10px 是模糊半徑 */
+     }
+
+     /* .navbar-toggler {
+         display: block;
+         position: fixed;
+         top: 20px;
+         right: 20vw;
+         z-index: 1000;
+     } */
+ }
+
+ @media only screen and (max-width: 767px) {
+     .circle {
+         width: 20px;
+         /* 調整圓的直徑 */
+         height: 20px;
+         /* 調整圓的直徑 */
+         border-radius: 50%;
+         /* 讓元素變成圓形 */
+         background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+         /* 使用漸層顏色 */
+         position: absolute;
+         top: 30%;
+         left: 20%;
+         transform: translate(-50%, -50%);
+         filter: blur(2px);
+         /* 添加模糊效果，10px 是模糊半徑 */
+     }
+ }
