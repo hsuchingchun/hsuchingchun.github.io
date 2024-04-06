@@ -241,7 +241,7 @@ html {
 }
 
 a {
-    color: #FEC804;
+    color: #000000;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -252,7 +252,7 @@ a:hover,
 a:active,
 a:focus {
     /* color: #62CDFF; */
-    color: #FEC804;
+    /* color: #FEC804; */
     outline: none;
     cursor: pointer;
 }
