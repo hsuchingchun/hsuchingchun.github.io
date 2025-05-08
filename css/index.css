@@ -1,160 +1,193 @@
- /* @import url('https://fonts.googleapis.com/css?family=Anton|Noto+Sans+TC|Noto+Serif+TC'); */
+/* @import url('https://fonts.googleapis.com/css?family=Anton|Noto+Sans+TC|Noto+Serif+TC'); */
 
- @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Noto+Sans+TC:wght@100;300;400;500;700&family=Quattrocento&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Noto+Sans+TC:wght@100;300;400;500;700&family=Quattrocento&family=Roboto&display=swap");
 
- .vertical-mode {
-     writing-mode: tb-rl;
-     -webkit-writing-mode: vertical-rl;
-     writing-mode: vertical-rl;
-     float: left;
- }
+.vertical-mode {
+  writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  float: left;
+}
 
- /* * {
+/* * {
      outline: solid #f00 1px !important;
      background: #000 !important;
      color: #fff !important;
  } */
 
- /* html {
+/* html {
      overflow-x: hidden;
  } */
 
- body {
-     font-family: 'Quattrocento', serif, 'Noto Sans TC', sans-serif;
+body {
+  font-family: "Quattrocento", serif, "Noto Sans TC", sans-serif;
+  /* font-family: "Noto Sans TC", sans-serif; */
+}
 
- }
+.text-roboto {
+  font-family: "Roboto", sans-serif;
+}
 
+.nav-link,
+footer {
+  font-family: "Julius Sans One", sans-serif;
+}
+#nav-home-tab,
+#nav-profile-tab,
+#nav-contact-tab {
+  font-family: "Quattrocento", serif, "Noto Sans TC", sans-serif;
+}
+.custom-tab .nav-link {
+  color: #f26322;
+}
 
- .text-roboto {
-     font-family: 'Roboto', sans-serif;
- }
-
- .nav-link,
- footer {
-     font-family: 'Julius Sans One', sans-serif;
- }
-
- /* .big {
+.custom-tab .nav-link:hover {
+  color: #fec804;
+}
+/* .big {
      font-size: 20pt;
      font-weight: 700;
  } */
- /*.righthome {
+/*.righthome {
      background: linear-gradient(90deg, #FEC804 380px, white 0);
      /* 原文: https://www.w3cplus.com/css3/css-secrets/cutout-corners.html © w3cplus.com 
  }*/
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 
- @keyframes typing {
-     from {
-         width: 0
-     }
- }
+@keyframes caret {
+  50% {
+    border-right-color: #000;
+  }
+}
 
- @keyframes caret {
-     50% {
-         border-right-color: #000;
-     }
- }
+.typing {
+  /* font-size: 22px; */
+  width: 9em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(9), caret 0.5s steps(1) 10;
+  border-right: 1px solid transparent;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
- .typing {
-     /* font-size: 22px; */
-     width: 9em;
-     white-space: nowrap;
-     overflow: hidden;
-     animation: typing 1s steps(9),
-         caret .5s steps(1) 10;
-     border-right: 1px solid transparent;
-     animation-iteration-count: infinite;
-     animation-direction: alternate;
+.circle {
+  width: 150px;
+  /* 調整圓的直徑 */
+  height: 150px;
+  /* 調整圓的直徑 */
+  border-radius: 50%;
+  /* 讓元素變成圓形 */
+  background-image: linear-gradient(
+    -225deg,
+    #9efbd3 0%,
+    #57e9f2 48%,
+    #45d4fb 100%
+  );
+  /* 使用漸層顏色 */
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  filter: blur(2px);
+  /* 添加模糊效果，10px 是模糊半徑 */
+}
 
- }
+.function-based-values-demo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  /* width: 500px; */
+}
 
- .circle {
-     width: 150px;
-     /* 調整圓的直徑 */
-     height: 150px;
-     /* 調整圓的直徑 */
-     border-radius: 50%;
-     /* 讓元素變成圓形 */
-     background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
-     /* 使用漸層顏色 */
-     position: absolute;
-     top: 30%;
-     left: 25%;
-     transform: translate(-50%, -50%);
-     filter: blur(2px);
-     /* 添加模糊效果，10px 是模糊半徑 */
- }
+.el {
+  width: 50px;
+  height: 50px;
+  /* background-color: #f00; */
+  color: #fff;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
 
+/* 作者：南极一块修炼千年的大冰块 链接：https: //juejin.cn/post/6975531630836318222 */
+/* 来源：稀土掘金 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 */
 
+@media only screen and (max-width: 580px) {
+  .circle {
+    width: 50px;
+    /* 調整圓的直徑 */
+    height: 50px;
+    /* 調整圓的直徑 */
+    border-radius: 50%;
+    /* 讓元素變成圓形 */
+    background-image: linear-gradient(
+      -225deg,
+      #9efbd3 0%,
+      #57e9f2 48%,
+      #45d4fb 100%
+    );
+    /* 使用漸層顏色 */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    filter: blur(2px);
+    /* 添加模糊效果，10px 是模糊半徑 */
+  }
 
-
- .function-based-values-demo {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     height: 200px;
-     /* width: 500px; */
-
- }
-
- .el {
-     width: 50px;
-     height: 50px;
-     /* background-color: #f00; */
-     color: #fff;
-     /* display: flex; */
-     justify-content: center;
-     align-items: center;
- }
-
-
-
- /* 作者：南极一块修炼千年的大冰块 链接：https: //juejin.cn/post/6975531630836318222 */
- /* 来源：稀土掘金 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 */
-
- @media only screen and (max-width: 580px) {
-     .circle {
-         width: 50px;
-         /* 調整圓的直徑 */
-         height: 50px;
-         /* 調整圓的直徑 */
-         border-radius: 50%;
-         /* 讓元素變成圓形 */
-         background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
-         /* 使用漸層顏色 */
-         position: absolute;
-         top: 30%;
-         left: 30%;
-         transform: translate(-50%, -50%);
-         filter: blur(2px);
-         /* 添加模糊效果，10px 是模糊半徑 */
-     }
-
-     /* .navbar-toggler {
+  /* .navbar-toggler {
          display: block;
          position: fixed;
          top: 20px;
          right: 20vw;
          z-index: 1000;
      } */
- }
+}
 
- @media only screen and (max-width: 767px) {
-     .circle {
-         width: 20px;
-         /* 調整圓的直徑 */
-         height: 20px;
-         /* 調整圓的直徑 */
-         border-radius: 50%;
-         /* 讓元素變成圓形 */
-         background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
-         /* 使用漸層顏色 */
-         position: absolute;
-         top: 30%;
-         left: 20%;
-         transform: translate(-50%, -50%);
-         filter: blur(2px);
-         /* 添加模糊效果，10px 是模糊半徑 */
-     }
- }
+@media only screen and (max-width: 767px) {
+  .circle {
+    width: 20px;
+    /* 調整圓的直徑 */
+    height: 20px;
+    /* 調整圓的直徑 */
+    border-radius: 50%;
+    /* 讓元素變成圓形 */
+    background-image: linear-gradient(
+      -225deg,
+      #9efbd3 0%,
+      #57e9f2 48%,
+      #45d4fb 100%
+    );
+    /* 使用漸層顏色 */
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    filter: blur(2px);
+    /* 添加模糊效果，10px 是模糊半徑 */
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,372 +1,388 @@
+#laushu {
+  background: url(../img/feature-project/laushu/laushu_cover.png) no-repeat
+    center fixed;
+  background-size: cover;
+  /* background-position-x: 20vw; */
+}
+
 #nccuspace {
-    background: url(../img/feature-project/nccuspace/nccuspace_mockup.png) no-repeat center fixed;
-    background-size: cover;
-    /* background-position-x: 20vw; */
+  background: url(../img/feature-project/nccuspace/nccuspace_mockup.png)
+    no-repeat center fixed;
+  background-size: cover;
+  /* background-position-x: 20vw; */
 }
 
 #pocketWorld {
-    background: url(../img/feature-project/pocketworld/pocket-cover-mobile.png) no-repeat center fixed;
-    background-size: cover;
-    background-position-x: 20vw;
+  background: url(../img/feature-project/pocketworld/pocket-cover-mobile.png)
+    no-repeat center fixed;
+  background-size: cover;
+  background-position-x: 20vw;
 }
 
 #moodlight {
-    background: url(../img/feature-project/moodlight/moodlight-mockup.png) no-repeat center fixed;
-    background-size: cover;
-    background-position-x: 15vw;
+  background: url(../img/feature-project/moodlight/moodlight-mockup.png)
+    no-repeat center fixed;
+  background-size: cover;
+  background-position-x: 15vw;
 }
 
 #exshare {
-    background: url(../img/feature-project/exshare/mockup-ex.png) no-repeat center fixed;
-    background-size: cover;
-    /* background-position-x: 20vw; */
+  background: url(../img/feature-project/exshare/mockup-ex.png) no-repeat center
+    fixed;
+  background-size: cover;
+  /* background-position-x: 20vw; */
 }
 
 #dream {
-    background: url(../img/special-project/dream/cover-dream.png) no-repeat center fixed;
-    background-size: cover;
-    /* background-position-x: 20vw; */
+  background: url(../img/special-project/dream/cover-dream.png) no-repeat center
+    fixed;
+  background-size: cover;
+  /* background-position-x: 20vw; */
 }
 
 #createarttalk {
-    background: url(../img/special-project/createarttalk/cover-cat.png) no-repeat center fixed;
-    background-size: cover;
-    /* background-position-x: 20vw; */
+  background: url(../img/special-project/createarttalk/cover-cat.png) no-repeat
+    center fixed;
+  background-size: cover;
+  /* background-position-x: 20vw; */
 }
 
-
 .img-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    /* 添加指針效果 */
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  /* 添加指針效果 */
 }
 
 .img-container img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
 }
 
 .project-page,
 .list-item {
-    display: flex;
-    align-items: center;
-    min-height: var(--doc-height);
-    ;
-    max-width: 100vw;
+  display: flex;
+  align-items: center;
+  min-height: var(--doc-height);
+  max-width: 100vw;
 }
 
 .title-cover {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px 30px;
-    /* box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1); */
-    /* display: flex; */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 30px;
+  /* box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1); */
+  /* display: flex; */
 }
 
 .title-cover-black {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 20px 30px;
 }
 
 .project-card {
-    border: 1px solid #dddddd;
-    padding: 20px 10px;
-    margin-top: 80px;
-    width: 80vw;
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
-    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #dddddd;
+  padding: 20px 10px;
+  margin-top: 80px;
+  width: 80vw;
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
 }
 
 .project-heading {
-    display: flex;
+  display: flex;
 }
 
 .page-heading {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 #overview .heading {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #role-card {
-    margin: 40px 20px;
+  margin: 40px 20px;
 }
 
 .project-title {
-    color: black;
+  color: black;
 }
 
 .content-black {
-    border-left: 1px solid #000;
-    color: #000;
-    line-height: 30px;
-    margin-left: 5px;
-    padding-left: 20px;
+  border-left: 1px solid #000;
+  color: #000;
+  line-height: 30px;
+  margin-left: 5px;
+  padding-left: 20px;
 }
 
-.content-black>p {
-    color: #000;
-    line-height: 30px;
+.content-black > p {
+  color: #000;
+  line-height: 30px;
 }
 
 .page {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .page-tag {
-    /* border: #000 1px solid; */
-    border-radius: 50%;
-    font-size: 16px;
-    background-color: rgba(254, 200, 4, 0.3);
-    padding: 25px 5px;
-    max-width: 110px;
-    height: 110px;
-    text-align: center;
-    line-height: 25px;
-    margin: 5px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
+  /* border: #000 1px solid; */
+  border-radius: 50%;
+  font-size: 16px;
+  background-color: rgba(254, 200, 4, 0.3);
+  padding: 25px 5px;
+  max-width: 110px;
+  height: 110px;
+  text-align: center;
+  line-height: 25px;
+  margin: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
 }
 
 .swot-tag {
-    font-size: 16px;
-    background-color: rgba(254, 200, 4, 0.3);
-    padding: 25px 5px;
-    /* max-width: 80vw; */
-    /* height: 110px; */
-    text-align: center;
-    line-height: 25px;
-    margin: 5px 10px;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(254, 200, 4, 0.3);
+  padding: 25px 5px;
+  /* max-width: 80vw; */
+  /* height: 110px; */
+  text-align: center;
+  line-height: 25px;
+  margin: 5px 10px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-weight: 400;
 }
 
 .go-tag {
-    border-bottom: #FEC804 1px solid;
+  border-bottom: #fec804 1px solid;
 }
 
 .go-tag:hover {
-    color: #F26322;
-    border-bottom: #F26322 1px solid;
+  color: #f26322;
+  border-bottom: #f26322 1px solid;
 }
 
 .list-padding {
-    padding-left: 12px;
+  padding-left: 12px;
 }
-
 
 /* 內頁 nav */
 
 .list-group {
-    position: fixed;
-    bottom: 10vh;
-    left: 30px;
-    --bs-list-group-border-color: transparent;
-    border-radius: 0%;
-    width: fit-content;
+  position: fixed;
+  bottom: 10vh;
+  left: 30px;
+  --bs-list-group-border-color: transparent;
+  border-radius: 0%;
+  width: fit-content;
 }
 
 .list-group-item {
-    padding: 5px;
-    color: #bbbbbb;
-    background-color: transparent;
-    font-size: 12px;
+  padding: 5px;
+  color: #bbbbbb;
+  background-color: transparent;
+  font-size: 12px;
 }
 
 .list-group-item.active {
-    background-color: transparent;
-    border-color: transparent;
-    color: #FEC804;
+  background-color: transparent;
+  border-color: transparent;
+  color: #fec804;
 }
 
 .list-group-item:hover {
-    background-color: transparent;
-    border-color: transparent;
-    color: #FEC804;
+  background-color: transparent;
+  border-color: transparent;
+  color: #fec804;
 }
 
 @media only screen and (max-width: 580px) {
-    #pocketWorld {
-        /* background-size: auto;
+  #pocketWorld {
+    /* background-size: auto;
         background-position-x: -115vw; */
-        background: url(../img/feature-project/pocketworld/pocket-cover-sm.png) no-repeat center fixed;
-        background-size: cover;
-    }
+    background: url(../img/feature-project/pocketworld/pocket-cover-sm.png)
+      no-repeat center fixed;
+    background-size: cover;
+  }
 
-    #moodlight {
-        background: url(../img/feature-project/moodlight/hello1.png) no-repeat center fixed;
-        background-size: cover;
-    }
+  #moodlight {
+    background: url(../img/feature-project/moodlight/hello1.png) no-repeat
+      center fixed;
+    background-size: cover;
+  }
 
-    #exshare {
-        background: url(../img/feature-project/exshare/mockup2-ex.png) no-repeat center fixed;
-        background-size: cover;
-        background-position-y: -15vw;
-    }
+  #exshare {
+    background: url(../img/feature-project/exshare/mockup2-ex.png) no-repeat
+      center fixed;
+    background-size: cover;
+    background-position-y: -15vw;
+  }
 
-    #createarttalk {
-        background: url(../img/special-project/createarttalk/cover-m-cat.png) no-repeat center fixed;
-        background-size: cover;
-    }
+  #createarttalk {
+    background: url(../img/special-project/createarttalk/cover-m-cat.png)
+      no-repeat center fixed;
+    background-size: cover;
+  }
 
-    .project-page {
-        display: flex;
-        align-items: end;
-        min-height: 100vh;
-        max-width: 100vw;
-        background-color: rgba(255, 255, 255, 0.8);
-    }
+  .project-page {
+    display: flex;
+    align-items: end;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 
-    .title-cover {
-        /* background-color: rgba(255, 255, 255, 0.9); */
-        border-radius: 20px 20px 0 0;
-        box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
+  .title-cover {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
 
-    .title-cover-black {
-        border-radius: 20px 20px 0 0;
-        box-shadow: 2px 0px 8px 2px rgba(255, 255, 255, 0.1);
-        text-align: center;
-    }
+  .title-cover-black {
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 0px 8px 2px rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
 
-    #role-card {
-        text-align: center;
-        margin: 20px 40px;
-    }
+  #role-card {
+    text-align: center;
+    margin: 20px 40px;
+  }
 
-    .project-title {
-        color: black;
-        border-bottom: 1px solid #dddddd;
-        line-height: 22px;
-    }
+  .project-title {
+    color: black;
+    border-bottom: 1px solid #dddddd;
+    line-height: 22px;
+  }
 
-    .project-heading {
-        justify-content: center;
-    }
+  .project-heading {
+    justify-content: center;
+  }
 
-    .content-black {
-        margin: auto 20px;
-        line-height: 28px;
-    }
+  .content-black {
+    margin: auto 20px;
+    line-height: 28px;
+  }
 
-    .page-heading {
-        margin: 0px 20px;
-    }
+  .page-heading {
+    margin: 0px 20px;
+  }
 
-    .list-group {
-        display: none;
-    }
+  .list-group {
+    display: none;
+  }
 
-    .video {
-        margin: auto 20px;
-    }
+  .video {
+    margin: auto 20px;
+  }
 
-    .list-padding {
-        margin-right: 30px;
-    }
+  .list-padding {
+    margin-right: 30px;
+  }
 
-    .page-tag {
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .page-tag {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-    .img-margin {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  .img-margin {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-    .moodlight-iframe {
-        width: 60vw;
-        height: 80vh;
-    }
+  .moodlight-iframe {
+    width: 60vw;
+    height: 80vh;
+  }
 
-    .ex-iframe {
-        width: 80vw;
-        height: 50vh;
-    }
+  .ex-iframe {
+    width: 80vw;
+    height: 50vh;
+  }
 
-    .dream-iframe {
-        height: 200px;
-        padding: 0 20px;
-    }
+  .dream-iframe {
+    height: 200px;
+    padding: 0 20px;
+  }
 
-    /* #performance {
+  /* #performance {
         min-height: 50vh;
     } */
 }
 
 @media only screen and (max-width: 767px) {
-    #role-card {
-        text-align: center;
-        margin: 20px 40px;
-    }
+  #role-card {
+    text-align: center;
+    margin: 20px 40px;
+  }
 
-    .project-title {
-        color: black;
-        border-bottom: 1px solid #dddddd;
-        line-height: 22px;
-    }
+  .project-title {
+    color: black;
+    border-bottom: 1px solid #dddddd;
+    line-height: 22px;
+  }
 
-    .project-page,
-    .list-item {
-        display: flex;
-        align-items: center;
-        min-height: 80vh;
-        max-width: 100vw;
-    }
+  .project-page,
+  .list-item {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    max-width: 100vw;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    #pocketWorld {
-        background: url(../img/feature-project/pocketworld/pocket-cover-sm.png) no-repeat center fixed;
-        background-size: cover;
-        /* background-position-x: -115vw; */
-    }
+  #pocketWorld {
+    background: url(../img/feature-project/pocketworld/pocket-cover-sm.png)
+      no-repeat center fixed;
+    background-size: cover;
+    /* background-position-x: -115vw; */
+  }
 
-    #moodlight {
-        background: url(../img/feature-project/moodlight/hello1.png) no-repeat center fixed;
-        background-size: cover;
-    }
+  #moodlight {
+    background: url(../img/feature-project/moodlight/hello1.png) no-repeat
+      center fixed;
+    background-size: cover;
+  }
 
-    .project-page {
-        display: flex;
-        align-items: end;
-        min-height: 100vh;
-        max-width: 100vw;
-        background-color: rgba(255, 255, 255, 0.8);
-    }
+  .project-page {
+    display: flex;
+    align-items: end;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 
-    .title-cover {
-        /* background-color: rgba(255, 255, 255, 0.9); */
-        border-radius: 20px 20px 0 0;
-        box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
+  .title-cover {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
 
-    .title-cover-black {
-        border-radius: 20px 20px 0 0;
-        box-shadow: 2px 0px 8px 2px rgba(255, 255, 255, 0.1);
-        text-align: center;
-    }
+  .title-cover-black {
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 0px 8px 2px rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
 
-    #role-card {
-        text-align: center;
-        margin: 20px 40px;
-    }
+  #role-card {
+    text-align: center;
+    margin: 20px 40px;
+  }
 
-    .project-title {
-        color: black;
-        border-bottom: 1px solid #dddddd;
-        line-height: 22px;
-    }
+  .project-title {
+    color: black;
+    border-bottom: 1px solid #dddddd;
+    line-height: 22px;
+  }
 }
