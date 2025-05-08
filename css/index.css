@@ -116,6 +116,73 @@ footer {
   align-items: center;
 }
 
+/* about 卡片 */
+.flip-card {
+  /*box-model*/
+  height: 350px;
+  width: 350px;
+  justify-content: center;
+}
+.flip-card-container {
+  /*box-model*/
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  /*style*/
+  /* border: black solid 2px; */
+}
+
+.front,
+.back {
+  /*display*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*box-model*/
+  height: 100%;
+  width: 100%;
+}
+/* .front {
+  font-size: 40px;
+  background-color: #666666;
+  color: #dddddd;
+} */
+
+/* .back {
+  background-color: #f27777;
+  font-size: 40px;
+  color: #f70707;
+} */
+
+/*for flip card*/
+.flip-card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card-container {
+  /*position*/
+  position: relative;
+  /*flip card*/
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-container {
+  transform: rotateY(180deg);
+}
+.front {
+  /*Position*/
+  position: absolute;
+  /*Flip Card*/
+  backface-visibility: hidden;
+}
+
+.back {
+  /*Position*/
+  position: absolute;
+  /*Flip Card*/
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
 /* 作者：南极一块修炼千年的大冰块 链接：https: //juejin.cn/post/6975531630836318222 */
 /* 来源：稀土掘金 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 */
 
