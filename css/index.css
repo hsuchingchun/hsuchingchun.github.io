@@ -119,8 +119,8 @@ footer {
 /* about 卡片 */
 .flip-card {
   /*box-model*/
-  height: 350px;
-  width: 350px;
+  height: 400px;
+  width: 400px;
   justify-content: center;
 }
 .flip-card-container {
